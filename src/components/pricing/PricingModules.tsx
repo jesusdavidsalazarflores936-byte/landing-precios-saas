@@ -1,12 +1,11 @@
 import { Container } from "@/components/ui/Container";
 import { PricingModuleCard } from "@/components/pricing/PricingModuleCard";
-import type { BillingPeriod } from "@/hooks/useBillingPeriod";
-import type { PricingModule } from "@/types/pricing.types";
+import type { Addon, BillingCycle } from "@/types/pricing.types";
 
 interface PricingModulesProps {
-  modules: PricingModule[];
-  period: BillingPeriod;
-  onModuleDetails?: (module: PricingModule) => void;
+  modules: Addon[];
+  period: BillingCycle;
+  onModuleDetails?: (module: Addon) => void;
 }
 
 export function PricingModules({

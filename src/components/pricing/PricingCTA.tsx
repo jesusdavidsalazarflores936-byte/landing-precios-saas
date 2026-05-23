@@ -1,8 +1,8 @@
 import { Container } from "@/components/ui/Container";
-import type { CTAConfig } from "@/types/pricing.types";
+import type { CtaButton } from "@/types/product.types";
 
 interface PricingCTAProps {
-  config: CTAConfig;
+  config: CtaButton;
 }
 
 export function PricingCTA({ config }: PricingCTAProps) {
@@ -11,14 +11,6 @@ export function PricingCTA({ config }: PricingCTAProps) {
       aria-labelledby="cta-heading"
       className="relative overflow-hidden bg-gradient-to-br from-indigo-600 to-violet-600 py-20 sm:py-24"
     >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 overflow-hidden"
-      >
-        <div className="absolute -top-16 -right-16 h-64 w-64 rounded-full bg-white/10 blur-2xl" />
-        <div className="absolute -bottom-20 -left-20 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
-      </div>
-
       <Container size="md" className="relative text-center">
         <h2
           id="cta-heading"

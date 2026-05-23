@@ -1,13 +1,12 @@
 import type {
   AddonPrice,
   BillingCycle,
-  BillingPeriod,
   PlanPrice,
 } from "@/types/pricing.types";
 
 type Price = PlanPrice | AddonPrice;
 
-export function formatPrice(price: Price, period: BillingPeriod): string {
+export function formatPrice(price: Price, period: BillingCycle): string {
   const amount = period === "monthly" ? price.amountMonthly : price.amountAnnual;
 
   const formatted = Number.isInteger(amount)
@@ -35,6 +34,6 @@ export function getAnnualTotal(price: PlanPrice): number {
   return price.amountAnnual * 12;
 }
 
-export function getPeriodLabel(period: BillingPeriod): string {
+export function getPeriodLabel(period: BillingCycle): string {
   return period === "monthly" ? "/mes" : "/año";
 }

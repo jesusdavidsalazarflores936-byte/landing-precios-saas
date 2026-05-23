@@ -12,8 +12,10 @@ export interface UseModuleModalReturn<TModule> {
 export function useModuleModal<TModule>(): UseModuleModalReturn<TModule> {
   const [selectedModule, setSelectedModule] = useState<TModule | null>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [returnFocusTo, setReturnFocusTo] = useState<HTMLElement | null>(null);
 
   const openModule = useCallback((module: TModule) => {
+    setReturnFocusTo(document.activeElement as HTMLElement | null);
     setSelectedModule(module);
     setIsOpen(true);
   }, []);
@@ -21,7 +23,9 @@ export function useModuleModal<TModule>(): UseModuleModalReturn<TModule> {
   const closeModule = useCallback(() => {
     setIsOpen(false);
     setSelectedModule(null);
-  }, []);
+    returnFocusTo?.focus();
+    setReturnFocusTo(null);
+  }, [returnFocusTo]);
 
   return {
     selectedModule,

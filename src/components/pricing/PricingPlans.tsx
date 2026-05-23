@@ -1,16 +1,17 @@
 import { PricingPlanCard } from "@/components/pricing/PricingPlanCard";
-import type { BillingPeriod } from "@/hooks/useBillingPeriod";
-import type { BasePlan } from "@/types/pricing.types";
+import type { BillingCycle, PricingPlan } from "@/types/pricing.types";
 
 interface PricingPlansProps {
-  plans: BasePlan[];
-  period: BillingPeriod;
+  plans: PricingPlan[];
+  period: BillingCycle;
 }
-
 
 export function PricingPlans({ plans, period }: PricingPlansProps) {
   return (
-    <section id="precios" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+    <section
+      id="precios"
+      className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8"
+    >
       <div className="mb-8 text-center">
         <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
           Plan base

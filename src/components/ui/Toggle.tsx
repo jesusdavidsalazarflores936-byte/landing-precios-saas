@@ -21,12 +21,16 @@ export function Toggle<T extends string>({
 }: ToggleProps<T>) {
   return (
     <div
-      role="group"
+      role="radiogroup"
       aria-label="Seleccionar período"
-      className={["inline-flex items-center bg-gray-100 rounded-full p-1 gap-1", className].join(" ")}
+      className={[
+        "inline-flex items-center bg-gray-100 rounded-full p-1 gap-1",
+        className,
+      ].join(" ")}
     >
       {options.map((option) => {
         const isActive = value === option.value;
+
         return (
           <button
             key={option.value}

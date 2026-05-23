@@ -1,13 +1,15 @@
 "use client";
 
 import { Toggle } from "@/components/ui/Toggle";
-import type { BillingPeriod } from "@/types/pricing.types";
-import type { BillingToggle as BillingToggleConfig } from "@/types/pricing.types";
+import type {
+  BillingCycle,
+  BillingToggle as BillingToggleConfig,
+} from "@/types/pricing.types";
 
 interface BillingToggleProps {
   config: BillingToggleConfig;
-  value: BillingPeriod;
-  onChange: (period: BillingPeriod) => void;
+  value: BillingCycle;
+  onChange: (period: BillingCycle) => void;
   className?: string;
 }
 
@@ -19,7 +21,7 @@ export function BillingToggle({
 }: BillingToggleProps) {
   return (
     <div className={`flex flex-col items-center gap-2 ${className}`}>
-      <Toggle<BillingPeriod>
+      <Toggle<BillingCycle>
         value={value}
         onChange={onChange}
         options={[

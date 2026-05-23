@@ -1,11 +1,11 @@
 import { Badge } from "@/components/ui/Badge";
-import { Card, CardHeader, CardBody, CardFooter } from "@/components/ui/Card";
+import { Card, CardBody, CardFooter, CardHeader } from "@/components/ui/Card";
 import { formatPrice, getPeriodLabel } from "@/lib/format-currency";
-import type { BasePlan, BillingPeriod } from "@/types/pricing.types";
+import type { BillingCycle, PricingPlan } from "@/types/pricing.types";
 
 interface PricingPlanCardProps {
-  plan: BasePlan;
-  period: BillingPeriod;
+  plan: PricingPlan;
+  period: BillingCycle;
 }
 
 export function PricingPlanCard({ plan, period }: PricingPlanCardProps) {
@@ -53,7 +53,9 @@ export function PricingPlanCard({ plan, period }: PricingPlanCardProps) {
                 key={feature.id}
                 className="flex items-start gap-2.5 text-sm text-gray-700"
               >
-                <span className="mt-0.5 shrink-0 text-indigo-500">✓</span>
+                <span className="mt-0.5 shrink-0 text-indigo-500" aria-hidden="true">
+                  ✓
+                </span>
                 <span>{feature.label}</span>
               </li>
             ))}
