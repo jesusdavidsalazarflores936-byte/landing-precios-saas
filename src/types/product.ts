@@ -1,4 +1,6 @@
-// Brand & Theme 
+import type { PricingPageConfig } from "./pricing";
+// Brand & Theme
+
 
 export interface BrandColors {
   primary: string;       // e.g. "#6366F1"
@@ -87,4 +89,13 @@ export interface Product {
   highlights?: ProductFeatureHighlight[];
   isActive: boolean;
   launchDate?: string;          // ISO 8601
+}
+
+
+export interface ProductFullConfig {
+  brand: BrandConfig;
+  seo: SeoMetadata;
+  hero: HeroConfig;
+  product: Product;
+  pricing: PricingPageConfig;
 }
