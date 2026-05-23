@@ -19,17 +19,17 @@ export function PricingModules({
     <section
       id="modulos"
       aria-labelledby="modules-heading"
-      className="py-16 sm:py-20 bg-gray-50"
+      className="bg-slate-50 px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
     >
-      <Container size="lg">
-        <div className="text-center mb-10">
+      <Container size="xl" padded={false}>
+        <div className="mx-auto mb-10 max-w-3xl text-center">
           <h2
             id="modules-heading"
-            className="text-2xl font-bold text-gray-900 sm:text-3xl"
+            className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl"
           >
-            Módulos adicionales
+            Personaliza tu plan con Módulos Adicionales
           </h2>
-          <p className="mt-2 text-gray-500 text-sm sm:text-base max-w-xl mx-auto">
+          <p className="mx-auto mt-3 max-w-2xl text-base leading-7 text-slate-500">
             Potencia tu plan base con los módulos que necesita tu operación. Actívalos cuando quieras.
           </p>
         </div>
@@ -38,11 +38,12 @@ export function PricingModules({
           className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
           aria-label="Módulos disponibles"
         >
-          {modules.map((module) => (
+          {modules.map((module, index) => (
             <li key={module.id} className="flex">
               <PricingModuleCard
                 module={module}
                 period={period}
+                featured={index === 0}
                 onDetails={onModuleDetails}
               />
             </li>

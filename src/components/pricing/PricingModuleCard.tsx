@@ -7,58 +7,84 @@ import type { Addon, BillingCycle } from "@/types/pricing.types";
 interface PricingModuleCardProps {
   module: Addon;
   period: BillingCycle;
+  featured?: boolean;
   onDetails?: (module: Addon) => void;
 }
 
 export function PricingModuleCard({
   module,
   period,
+  featured = false,
   onDetails,
 }: PricingModuleCardProps) {
   return (
     <Card
-      variant="elevated"
+      variant="default"
       padding="none"
-      className="flex h-full flex-col overflow-hidden transition-shadow duration-200 hover:shadow-xl"
+      className={[
+        "flex h-full w-full flex-col overflow-hidden rounded-2xl border-gray-200 bg-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md",
+        featured ? "border-[#fecaca] shadow-rose-100/70" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
     >
-      <div className="flex flex-1 flex-col p-5 sm:p-6">
-        <CardHeader>
-          <div className="mb-3 flex items-start justify-between gap-2">
-            <h3 className="text-base font-bold text-gray-900 sm:text-lg">
-              {module.name}
-            </h3>
+      <div className="flex flex-1 flex-col p-6">
+        <CardHeader className="mb-0">
+          <div className="mb-4 flex items-start justify-between gap-3">
+            <span
+              aria-hidden="true"
+              className={[
+                "flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-xl font-semibold",
+                featured
+                  ? "bg-[#fff0ee] text-[#ff5f57]"
+                  : "bg-slate-100 text-slate-600",
+              ].join(" ")}
+            >
+              +
+            </span>
 
             {module.badge && (
-              <Badge variant="primary" size="sm">
+              <Badge
+                variant="default"
+                size="sm"
+                className="bg-[#fff0ee] text-[#d94840]"
+              >
                 {module.badge}
               </Badge>
             )}
           </div>
 
-          <p className="text-sm leading-relaxed text-gray-500">
+          <h3 className="text-lg font-bold tracking-tight text-slate-950">
+            {module.name}
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-slate-500">
             {module.description}
           </p>
         </CardHeader>
 
-        <CardBody>
-          <div className="mt-4 flex items-end gap-1">
-            <span className="text-2xl font-extrabold text-gray-900">
+        <CardBody className="flex-1">
+          <div className="mt-5 flex items-end gap-1">
+            <span className="text-3xl font-extrabold tracking-tight text-slate-950">
               {module.price.isContactSales
                 ? "Contactar ventas"
                 : formatPrice(module.price, period)}
             </span>
             {!module.price.isContactSales && (
-              <span className="mb-0.5 text-xs text-gray-500">
+              <span className="mb-1 text-sm font-medium text-slate-500">
                 {getPeriodLabel(period)}
               </span>
             )}
           </div>
 
           {module.features && module.features.length > 0 && (
-            <ul className="mt-4 space-y-2 text-sm text-gray-600">
+            <ul className="mt-5 space-y-2.5 text-sm text-slate-700">
               {module.features.map((feature) => (
-                <li key={feature} className="flex gap-2">
-                  <span className="text-green-500" aria-hidden="true">
+                <li key={feature} className="flex items-start gap-2.5">
+                  <span
+                    className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#fff0ee] text-[10px] font-bold text-[#ff5f57]"
+                    aria-hidden="true"
+                  >
                     ✓
                   </span>
                   <span>{feature}</span>
@@ -69,11 +95,12 @@ export function PricingModuleCard({
         </CardBody>
 
         {onDetails && (
-          <CardFooter className="mt-auto flex flex-col gap-2 pt-4">
+          <CardFooter className="mt-auto border-t border-slate-100 px-0 pb-0 pt-5">
             <Button
               variant="ghost"
               size="sm"
               fullWidth
+              className="text-[#d94840] hover:bg-[#fff0ee] hover:text-[#c43f37] focus-visible:ring-[#ff5f57]"
               onClick={() => onDetails(module)}
             >
               Ver detalles
