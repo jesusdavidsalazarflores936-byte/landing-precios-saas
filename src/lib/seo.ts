@@ -9,8 +9,17 @@ export function buildMetadata(seo: SeoMetadata): Metadata {
   const metadata: Metadata = {
     title: seo.title,
     description: seo.description,
+    applicationName: seo.structuredDataType ?? undefined,
     alternates: {
       canonical: seo.canonicalUrl,
+    },
+    openGraph: {
+      title: seo.title,
+      description: seo.description,
+      url: seo.canonicalUrl,
+      locale: seo.locale ?? "es-PE",
+      type: "website",
+      ...(seo.ogImageUrl ? { images: [{ url: seo.ogImageUrl }] } : {}),
     },
   };
 
@@ -19,15 +28,6 @@ export function buildMetadata(seo: SeoMetadata): Metadata {
   }
 
   if (seo.ogImageUrl) {
-    metadata.openGraph = {
-      title: seo.title,
-      description: seo.description,
-      url: seo.canonicalUrl,
-      images: [{ url: seo.ogImageUrl }],
-      locale: seo.locale ?? "es-PE",
-      type: "website",
-    };
-
     metadata.twitter = {
       card: "summary_large_image",
       title: seo.title,
