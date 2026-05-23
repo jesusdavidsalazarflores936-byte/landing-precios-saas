@@ -1,4 +1,4 @@
-import type { CtaButton } from "./product";
+import type { CtaButton } from "./product.types";
 
 // ─── Billing ─────────────────────────────────────────────────────────────────
 
@@ -6,8 +6,10 @@ export type BillingCycle = "monthly" | "annual";
 
 export interface BillingToggle {
   defaultCycle: BillingCycle;
-  annualDiscountPercent: number;   // e.g. 20 → "Ahorra 20%"
-  annualDiscountLabel: string;     // e.g. "2 meses gratis"
+  annualDiscountPercent: number;
+  annualDiscountLabel: string;
+  monthlyLabel?: string;
+  annualLabel?: string;
 }
 
 // ─── Feature (shared across plans & comparison table) ────────────────────────
@@ -159,3 +161,17 @@ export interface PricingPageConfig {
   faq?: FaqSection;
   finalCta: FinalCtaSection;
 }
+
+export type BillingPeriod = BillingCycle;
+
+export type BasePlan = PricingPlan;
+
+export type PricingModule = Addon;
+
+export type FAQItem = FaqItem;
+
+export type CTAConfig = CtaButton;
+
+export type ProductPricingConfig = PricingPageConfig;
+
+export type BillingToggleConfig = BillingToggle;

@@ -1,4 +1,4 @@
-import type { PricingPageConfig } from "./pricing";
+import type { PricingPageConfig } from "./pricing.types";
 // Brand & Theme
 
 

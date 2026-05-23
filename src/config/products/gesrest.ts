@@ -1,4 +1,4 @@
-import type { ProductFullConfig } from "@/types/product";
+import type { ProductFullConfig } from "@/types/product.types";
 
 const config: ProductFullConfig = {
   brand: {
