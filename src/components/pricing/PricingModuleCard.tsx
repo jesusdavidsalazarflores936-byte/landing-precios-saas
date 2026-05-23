@@ -22,7 +22,7 @@ export function PricingModuleCard({
       variant="default"
       padding="none"
       className={[
-        "flex h-full w-full flex-col overflow-hidden rounded-2xl border-gray-200 bg-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md",
+        "flex h-full w-full flex-col overflow-hidden rounded-2xl border-gray-200 bg-white shadow-sm hover:-translate-y-1 hover:border-[#fecaca] hover:shadow-lg hover:shadow-rose-100/70",
         featured ? "border-[#fecaca] shadow-rose-100/70" : "",
       ]
         .filter(Boolean)
@@ -100,7 +100,7 @@ export function PricingModuleCard({
               variant="ghost"
               size="sm"
               fullWidth
-              className="text-[#d94840] hover:bg-[#fff0ee] hover:text-[#c43f37] focus-visible:ring-[#ff5f57]"
+              className="text-[#d94840] hover:-translate-y-0.5 hover:bg-[#fff0ee] hover:text-[#c43f37] active:translate-y-px focus-visible:ring-[#ff5f57]"
               onClick={() => onDetails(module)}
             >
               Ver detalles

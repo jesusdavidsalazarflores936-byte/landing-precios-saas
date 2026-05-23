@@ -39,7 +39,7 @@ export function Card({
   return (
     <Tag
       className={[
-        "rounded-2xl transition-shadow duration-200",
+        "rounded-2xl transition-all duration-300 ease-out",
         variantClasses[variant],
         paddingClasses[padding],
         className,

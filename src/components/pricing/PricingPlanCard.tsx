@@ -13,7 +13,7 @@ export function PricingPlanCard({ plan, period }: PricingPlanCardProps) {
     <Card
       variant="default"
       padding="none"
-      className="overflow-hidden rounded-2xl border-[#fecaca] bg-white shadow-xl shadow-rose-100/60"
+      className="overflow-hidden rounded-2xl border-[#fecaca] bg-white shadow-xl shadow-rose-100/60 hover:-translate-y-1 hover:border-[#ffb4ad] hover:shadow-2xl hover:shadow-[#ff5f57]/15"
     >
       <div className="grid gap-6 p-6 sm:p-8 lg:grid-cols-[1fr_0.95fr] lg:items-stretch lg:gap-8">
         <div className="flex flex-col">
@@ -52,7 +52,7 @@ export function PricingPlanCard({ plan, period }: PricingPlanCardProps) {
           <CardFooter className="mt-auto border-t-0 px-0 pb-0 pt-7">
             <a
               href={plan.cta.href}
-              className="inline-flex min-h-12 w-full items-center justify-center rounded-xl bg-[#ff5f57] px-6 py-3 text-center text-sm font-semibold text-white shadow-sm shadow-[#ff5f57]/20 transition hover:bg-[#f04f48] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ff5f57] focus-visible:ring-offset-2 sm:w-auto"
+              className="inline-flex min-h-12 w-full items-center justify-center rounded-xl bg-[#ff5f57] px-6 py-3 text-center text-sm font-semibold text-white shadow-sm shadow-[#ff5f57]/20 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#f04f48] hover:shadow-md hover:shadow-[#ff5f57]/25 active:translate-y-px active:bg-[#d94840] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ff5f57] focus-visible:ring-offset-2 sm:w-auto"
             >
               {plan.cta.label}
             </a>
