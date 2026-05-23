@@ -3,26 +3,34 @@ import type { CtaButton } from "@/types/product.types";
 
 interface PricingCTAProps {
   config: CtaButton;
+  headline?: string;
+  subheadline?: string;
 }
 
-export function PricingCTA({ config }: PricingCTAProps) {
+export function PricingCTA({ config, headline, subheadline }: PricingCTAProps) {
   return (
     <section
       aria-labelledby="cta-heading"
-      className="relative overflow-hidden bg-gradient-to-br from-indigo-600 to-violet-600 py-20 sm:py-24"
+      className="bg-[#ff5f57] px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
     >
-      <Container size="md" className="relative text-center">
+      <Container size="md" padded={false} className="text-center">
         <h2
           id="cta-heading"
-          className="text-2xl font-bold text-white sm:text-3xl lg:text-4xl"
+          className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
         >
-          {config.label}
+          {headline ?? config.label}
         </h2>
+
+        {subheadline && (
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/85">
+            {subheadline}
+          </p>
+        )}
 
         <div className="mt-8 flex justify-center">
           <a
             href={config.href}
-            className="inline-block rounded-lg bg-white px-6 py-3 text-sm font-medium text-indigo-600 hover:bg-gray-100 transition"
+            className="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-7 py-3 text-sm font-semibold text-[#d94840] shadow-sm transition hover:bg-[#fff7f5] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#ff5f57]"
           >
             {config.label}
           </a>

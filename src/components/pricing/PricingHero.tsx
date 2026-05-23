@@ -9,6 +9,11 @@ export function PricingHero({ config }: PricingHeroProps) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#fff7f5] via-white to-white px-4 pt-20 pb-16 sm:pt-28 sm:pb-20">
       <Container size="lg" className="relative text-center">
+        <div className="mb-7 flex justify-center">
+          <span className="rounded-full border border-[#fee2e2] bg-white px-4 py-1.5 text-xs font-bold uppercase tracking-[0.28em] text-[#ff5f57] shadow-sm">
+            Planes y precios
+          </span>
+        </div>
         <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
           {config.headline}
         </h1>

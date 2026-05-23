@@ -1,7 +1,6 @@
 "use client";
 
 import { LandingFooter } from "@/components/layout/LandingFooter";
-import { LandingHeader } from "@/components/layout/LandingHeader";
 import { BillingToggle } from "@/components/pricing/BillingToggle";
 import { ModuleDetailModal } from "@/components/pricing/ModuleDetailModal";
 import { PricingCTA } from "@/components/pricing/PricingCTA";
@@ -21,7 +20,7 @@ export function PricingLanding({ config }: PricingLandingProps) {
   const fullConfig = "pricing" in config ? config : null;
   const pricing = "pricing" in config ? config.pricing : config;
   const productName = fullConfig?.brand.name ?? "Precios";
-  const headerCta = fullConfig?.hero.ctaPrimary ?? pricing.finalCta.ctaPrimary;
+  const finalCta = pricing.finalCta;
   const { period, setPeriod } = useBillingPeriod(
     pricing.billingToggle.defaultCycle
   );
@@ -30,11 +29,7 @@ export function PricingLanding({ config }: PricingLandingProps) {
 
   return (
     <>
-      <LandingHeader
-        productName={productName}
-        ctaLabel={headerCta.label}
-        ctaHref={headerCta.href}
-      />
+      
 
       <main>
         <div className="border-b border-gray-100 bg-white py-3">
@@ -61,7 +56,11 @@ export function PricingLanding({ config }: PricingLandingProps) {
           <PricingFAQ items={pricing.faq.items} />
         )}
 
-        <PricingCTA config={pricing.finalCta.ctaPrimary} />
+        <PricingCTA
+          config={finalCta.ctaPrimary}
+          headline={finalCta.headline}
+          subheadline={finalCta.subheadline}
+        />
 
         <ModuleDetailModal
           module={selectedModule}
