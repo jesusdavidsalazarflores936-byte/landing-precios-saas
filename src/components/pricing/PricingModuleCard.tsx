@@ -51,11 +51,11 @@ export function PricingModuleCard({
               +
             </span>
             <div>
-              <h3 className="text-lg font-bold tracking-tight text-card-foreground">
+              <h3 className="min-h-14 text-lg font-bold leading-7 tracking-tight text-card-foreground">
                 {module.name}
               </h3>
 
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              <p className="mt-2 min-h-[4.5rem] overflow-hidden text-sm leading-6 text-muted-foreground [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
                 {cardDescription}
               </p>
             </div>
@@ -63,7 +63,7 @@ export function PricingModuleCard({
         </CardHeader>
 
         <CardBody className="flex-1">
-          <div className="mt-5 flex items-end gap-1">
+          <div className="mt-6 flex min-h-12 items-end gap-1">
             {module.price.isContactSales ? (
               <span className="font-bold text-3xl">Contactar ventas</span>
             ) : (
@@ -80,7 +80,7 @@ export function PricingModuleCard({
           </div>
 
           {module.features && module.features.length > 0 && (
-            <div className="mt-5">
+            <div className="mt-6">
               <p className="mb-3 text-xs font-bold uppercase tracking-wider text-card-foreground">
                 CARACTER&Iacute;STICAS PRINCIPALES
               </p>

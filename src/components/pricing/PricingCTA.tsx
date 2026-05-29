@@ -10,6 +10,7 @@ interface PricingCTAProps {
 export function PricingCTA({ config, headline, subheadline }: PricingCTAProps) {
   return (
     <section
+      id="demo-form"
       aria-labelledby="cta-heading"
       className="bg-primary px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
     >
