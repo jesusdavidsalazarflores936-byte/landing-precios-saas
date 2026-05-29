@@ -1,9 +1,11 @@
-import type { NextConfig } from "next";
+const isProd = process.env.NODE_ENV === 'production';
 
-const nextConfig: NextConfig = {
+const nextConfig = {
+  assetPrefix: isProd ? 'https://landing-precios-saas.vercel.app' : undefined,
+
   turbopack: {
     root: process.cwd(),
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
