@@ -111,7 +111,7 @@ const config: ProductFullConfig = {
         slug: "facturacion",
         name: "Facturación Electrónica",
         description: "Declaración automática a los sistemas de SUNAT.",
-        category: "other", // <-- ¡Aquí estaba el error!
+        category: "other", 
         price: { amountMonthly: 40, amountAnnual: 400, currency: "PEN", currencySymbol: "S/" },
         compatiblePlanIds: ["pulso_base"],
         features: ["Emisión de boletas y facturas", "Declaración automática a SUNAT", "Formatos digitales para el paciente"],
