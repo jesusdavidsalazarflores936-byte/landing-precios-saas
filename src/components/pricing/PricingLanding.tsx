@@ -7,6 +7,7 @@ import { PricingCTA } from "@/components/pricing/PricingCTA";
 import { PricingFAQ } from "@/components/pricing/PricingFAQ";
 import { PricingModules } from "@/components/pricing/PricingModules";
 import { PricingPlans } from "@/components/pricing/PricingPlans";
+import { FAQ } from "@/components/ui/FAQ";
 import { useBillingPeriod } from "@/hooks/useBillingPeriod";
 import { useModuleModal } from "@/hooks/useModuleModal";
 import type { Addon, PricingPageConfig } from "@/types/pricing.types";
@@ -54,6 +55,10 @@ export function PricingLanding({ config }: PricingLandingProps) {
 
         {pricing.faq && pricing.faq.items.length > 0 && (
           <PricingFAQ items={pricing.faq.items} />
+        )}
+
+        {fullConfig?.faq && fullConfig.faq.length > 0 && (
+          <FAQ items={fullConfig.faq} />
         )}
 
         <PricingCTA

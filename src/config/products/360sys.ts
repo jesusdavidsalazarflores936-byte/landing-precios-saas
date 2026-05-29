@@ -29,7 +29,7 @@ const config: ProductFullConfig = {
   hero: {
     headline: "Toda tu empresa en una sola pantalla",
     subheadline: "Finanzas, ventas, inventario y RRHH conectados en tiempo real.",
-    ctaPrimary: { label: "Ver precios", href: "#precios", variant: "primary" },
+    ctaPrimary: { label: "Solicitar demo", href: "#demo-form", variant: "primary" },
     ctaSecondary: {
       label: "Solicitar demo",
       href: "/contacto?producto=360sys",
@@ -115,8 +115,8 @@ const config: ProductFullConfig = {
           },
         ],
         cta: {
-          label: "Empezar gratis",
-          href: "/registro?producto=360sys",
+          label: "Solicitar demo",
+          href: "#demo-form",
           variant: "primary",
         },
         badge: "Obligatorio",
@@ -373,8 +373,8 @@ const config: ProductFullConfig = {
       subheadline: "Comienza con el Core y agrega módulos conforme creces.",
       backgroundVariant: "dark",
       ctaPrimary: {
-        label: "Empezar gratis",
-        href: "/registro?producto=360sys",
+        label: "Solicitar demo",
+        href: "#demo-form",
         variant: "primary",
       },
       ctaSecondary: {
@@ -385,6 +385,24 @@ const config: ProductFullConfig = {
       trustSignals: ["14 días gratis", "Implementación guiada", "Sin permanencia"],
     },
   },
+  faq: [
+    {
+      question: "¿Puedo usar solo el Punto de Venta sin módulos adicionales?",
+      answer: "Sí, el plan base incluye POS, Facturación Electrónica y gestión esencial. Los módulos como Inventario, Veterinaria o Reservas son opcionales y se añaden según tus necesidades.",
+    },
+    {
+      question: "¿El módulo de Tienda Virtual se sincroniza con mi stock físico?",
+      answer: "Totalmente. Tu tienda virtual se alimenta directamente del catálogo y stock real de tu Punto de Venta, por lo que precios y existencias se actualizan automáticamente en ambos canales.",
+    },
+    {
+      question: "¿Cómo ayuda el módulo de Veterinaria a mi clínica?",
+      answer: "Centraliza la historia médica completa (vacunas, citas, hospitalizaciones) y automatiza recordatorios de asistencia por WhatsApp para los propietarios, profesionalizando tu gestión.",
+    },
+    {
+      question: "¿Puedo personalizar mi Carta Digital si tengo múltiples precios?",
+      answer: "Sí, el sistema permite manejar múltiples listas de precios y presentaciones de productos, asegurando que tu carta digital refleje la información correcta para tus clientes.",
+    },
+  ],
 };
 
 export default config;

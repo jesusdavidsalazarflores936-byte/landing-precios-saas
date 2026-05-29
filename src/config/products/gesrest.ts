@@ -30,7 +30,7 @@ const config: ProductFullConfig = {
   hero: {
     headline: "Planes diseñados para tu restaurante",
     subheadline: "Gestión gastronómica simplificada.",
-    ctaPrimary: { label: "Comenzar prueba gratis", href: "#precios", variant: "primary" },
+    ctaPrimary: { label: "Comenzar ahora", href: "#demo-form", variant: "primary" },
     ctaSecondary: { label: "Solicitar demo", href: "/contacto?producto=gesrest", variant: "outline" },
   },
 
@@ -103,7 +103,7 @@ const config: ProductFullConfig = {
             description: "Cumple con SUNAT sin complicaciones. El sistema envía automáticamente boletas, facturas, anulaciones, notas de crédito y guías de remisión cada vez que se genera una venta o se realiza un cambio. La emisión de comprobantes es ilimitada y, si se anula una venta, el comprobante se anula solo. Además, puedes enviar los comprobantes directamente al cliente por correo o WhatsApp. Sin papeles, sin demoras, sin errores.",
           },
         ],
-        cta: { label: "Empezar ahora", href: "/registro?producto=gesrest", variant: "primary" },
+        cta: { label: "Comenzar ahora", href: "#demo-form", variant: "primary" },
         badge: "Requerido",
         sortOrder: 1,
         trialDays: 14,
@@ -299,11 +299,29 @@ const config: ProductFullConfig = {
       headline: "Simplifica la gestión de tu restaurante",
       subheadline: "Empieza con el plan base y escala según las necesidades de tu negocio.",
       backgroundVariant: "dark",
-      ctaPrimary: { label: "Empezar gratis", href: "/registro?producto=gesrest", variant: "primary" },
+      ctaPrimary: { label: "Comenzar ahora", href: "#demo-form", variant: "primary" },
       ctaSecondary: { label: "Agendar demo", href: "/contacto?producto=gesrest", variant: "outline" },
       trustSignals: ["Facturación ilimitada", "Soporte especializado", "Sin contratos forzosos"],
     },
   },
+  faq: [
+    {
+      question: "¿La Facturación Electrónica está validada por SUNAT?",
+      answer: "Sí, el sistema emite boletas, facturas y notas de crédito con envío ilimitado y automático a SUNAT, cumpliendo con toda la normativa vigente.",
+    },
+    {
+      question: "¿Necesito internet constante para usar el Punto de Venta?",
+      answer: "Para la venta fluida en caja no es indispensable internet constante, pero sí se requiere conexión para sincronizar ventas, enviar comprobantes a SUNAT y para el funcionamiento de módulos online como la Carta Digital.",
+    },
+    {
+      question: "¿Cómo funciona la Carta Digital con WhatsApp?",
+      answer: "Tus clientes escanean un QR para ver la carta, arman su pedido interactivo y, al finalizar, el sistema genera automáticamente un mensaje de WhatsApp para coordinar el pago directo contigo, sin comisiones intermedias.",
+    },
+    {
+      question: "¿Qué sucede si un cliente tiene una mala experiencia en la Encuesta?",
+      answer: "El sistema te notifica de inmediato por WhatsApp indicándote el pedido y el responsable de la mesa para que puedas reaccionar a tiempo y fidelizar al cliente.",
+    },
+  ],
 };
 
 export default config;

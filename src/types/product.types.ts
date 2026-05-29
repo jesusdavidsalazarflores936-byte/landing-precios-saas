@@ -96,6 +96,11 @@ export interface Product {
   launchDate?: string;          // ISO 8601
 }
 
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 
 export interface ProductFullConfig {
   brand: BrandConfig;
@@ -103,4 +108,5 @@ export interface ProductFullConfig {
   hero: HeroConfig;
   product: Product;
   pricing: PricingPageConfig;
+  faq?: FAQItem[];
 }
