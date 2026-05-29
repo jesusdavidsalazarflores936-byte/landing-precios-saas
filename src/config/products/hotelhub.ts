@@ -25,7 +25,7 @@ const config: ProductFullConfig = {
   hero: {
     headline: "Planes diseñados para tu hotel",
     subheadline: "Gestión hotelera simplificada y en tiempo real.",
-    ctaPrimary: { label: "Comenzar prueba gratis", href: "#precios", variant: "primary" },
+    ctaPrimary: { label: "Comenzar ", href: "#precios", variant: "primary" },
     ctaSecondary: { label: "Solicitar demo", href: "/contacto?producto=hotelhub", variant: "outline" },
   },
 
@@ -43,7 +43,7 @@ const config: ProductFullConfig = {
     billingToggle: {
       defaultCycle: "monthly",
       annualDiscountPercent: 17,
-      annualDiscountLabel: "2 meses gratis",
+      annualDiscountLabel: "ahorra con el anual",
     },
     requiredPlanId: "hotelhub_base",
     plans: [
@@ -149,7 +149,7 @@ const config: ProductFullConfig = {
       headline: "Moderniza la gestión de tu hotel",
       subheadline: "Todo bajo control, desde la reserva hasta el check-out.",
       backgroundVariant: "dark",
-      ctaPrimary: { label: "Empezar gratis", href: "/registro?producto=hotelhub", variant: "primary" },
+      ctaPrimary: { label: "Empezar ", href: "/registro?producto=hotelhub", variant: "primary" },
       ctaSecondary: { label: "Agendar demo", href: "/contacto?producto=hotelhub", variant: "outline" },
       trustSignals: ["Sin instalación complicada", "Soporte dedicado", "Escalable a tu medida"],
     },

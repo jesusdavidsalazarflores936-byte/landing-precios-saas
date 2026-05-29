@@ -51,7 +51,7 @@ const config: ProductFullConfig = {
     billingToggle: {
       defaultCycle: "annual",
       annualDiscountPercent: 17,
-      annualDiscountLabel: "2 meses gratis",
+      annualDiscountLabel: "ahorra con el anual",
     },
     requiredPlanId: "sys360_base",
     plans: [
@@ -382,7 +382,7 @@ const config: ProductFullConfig = {
         href: "/contacto?producto=360sys",
         variant: "outline",
       },
-      trustSignals: ["14 días gratis", "Implementación guiada", "Sin permanencia"],
+      trustSignals: [ "Implementación guiada", "Sin permanencia"],
     },
   },
   faq: [

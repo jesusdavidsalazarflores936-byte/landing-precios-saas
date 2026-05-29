@@ -47,8 +47,8 @@ const config: ProductFullConfig = {
   pricing: {
     billingToggle: {
       defaultCycle: "monthly",
-      annualDiscountPercent: 17, // 2 meses gratis aprox
-      annualDiscountLabel: "2 meses gratis",
+      annualDiscountPercent: 17, 
+      annualDiscountLabel: "ahorra con el anual",
     },
     requiredPlanId: "gesrest_base",
     plans: [
@@ -292,7 +292,7 @@ const config: ProductFullConfig = {
         { id: "f2", question: "¿Hay límite en la emisión de comprobantes electrónicos?",
           answer: "No, la emisión de boletas y facturas electrónicas es ilimitada.", sortOrder: 2 },
         { id: "f3", question: "¿Puedo cambiar de plan mensual a anual?",
-          answer: "Sí, puedes actualizar tu ciclo de facturación en cualquier momento y aprovechar el descuento de 2 meses gratis.", sortOrder: 3 },
+          answer: "Sí, puedes actualizar tu ciclo de facturación en cualquier momento.", sortOrder: 3 },
       ],
     },
     finalCta: {

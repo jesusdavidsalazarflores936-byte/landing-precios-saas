@@ -43,7 +43,7 @@ const config: ProductFullConfig = {
     billingToggle: {
       defaultCycle: "annual",
       annualDiscountPercent: 17,
-      annualDiscountLabel: "2 meses gratis",
+      annualDiscountLabel: "ahorra con el anual",
     },
     requiredPlanId: "compe_base",
     plans: [
@@ -64,7 +64,7 @@ const config: ProductFullConfig = {
           { id: "api",       label: "API REST básica",             value: true },
           { id: "volumen",   label: "Hasta 500 comprobantes/mes",  value: true },
         ],
-        cta: { label: "Empezar gratis", href: "/registro?producto=comprobante-e", variant: "primary" },
+        cta: { label: "Empezar", href: "/registro?producto=comprobante-e", variant: "primary" },
         badge: "Obligatorio",
         sortOrder: 1,
         trialDays: 30,
@@ -120,13 +120,21 @@ const config: ProductFullConfig = {
       ],
     },
     finalCta: {
-      headline: "Empieza a facturar electrónicamente hoy",
-      subheadline: "30 días gratis. Sin límite de comprobantes durante la prueba.",
-      backgroundVariant: "brand",
-      ctaPrimary: { label: "Crear cuenta gratis", href: "/registro?producto=comprobante-e", variant: "primary" },
-      ctaSecondary: { label: "Ver documentación API", href: "/docs/comprobante-e", variant: "outline" },
-      trustSignals: ["30 días gratis", "PSE autorizado SUNAT", "99.98% uptime"],
-    },
+  headline: "Empieza a facturar electrónicamente hoy",
+  subheadline: "Optimiza tu gestión y mantén el control total de tus comprobantes.",
+  backgroundVariant: "brand",
+  ctaPrimary: { 
+    label: "Solicitar demo", 
+    href: "#demo-form", 
+    variant: "primary" 
+  },
+  ctaSecondary: { 
+    label: "Ver documentación API", 
+    href: "/docs/comprobante-e", 
+    variant: "outline" 
+  },
+  trustSignals: ["PSE autorizado SUNAT", "99.98% uptime", "Soporte técnico 24/7"],
+},
   },
 };
 

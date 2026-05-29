@@ -46,7 +46,7 @@ const config: ProductFullConfig = {
     billingToggle: {
       defaultCycle: "annual",
       annualDiscountPercent: 17,
-      annualDiscountLabel: "2 meses gratis",
+      annualDiscountLabel: "ahorra con el anual",
     },
     requiredPlanId: "pulso_base",
     plans: [
