@@ -25,7 +25,7 @@ const config: ProductFullConfig = {
   hero: {
     headline: "Planes diseñados para tu hotel",
     subheadline: "Gestión hotelera simplificada y en tiempo real.",
-    ctaPrimary: { label: "Comenzar ", href: "#precios", variant: "primary" },
+    ctaPrimary: { label: "Ver Precios ", href: "#precios", variant: "primary" },
     ctaSecondary: { label: "Solicitar demo", href: "/contacto?producto=hotelhub", variant: "outline" },
   },
 

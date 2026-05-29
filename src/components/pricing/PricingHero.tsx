@@ -24,10 +24,10 @@ export function PricingHero({ config }: PricingHeroProps) {
 
         <div className="mt-9">
           <a
-            href={config.ctaPrimary.href}
+            href="#precios"
             className="inline-flex min-h-12 items-center justify-center rounded-xl bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition hover:bg-primary/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
           >
-            {config.ctaPrimary.label}
+            Ver precios
           </a>
         </div>
       </Container>
