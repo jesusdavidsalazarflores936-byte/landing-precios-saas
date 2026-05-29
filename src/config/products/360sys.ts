@@ -29,7 +29,7 @@ const config: ProductFullConfig = {
   hero: {
     headline: "Toda tu empresa en una sola pantalla",
     subheadline: "Finanzas, ventas, inventario y RRHH conectados en tiempo real.",
-    ctaPrimary: { label: "Solicitar demo", href: "#demo-form", variant: "primary" },
+    ctaPrimary: { label: "Ver Precios", href: "precios", variant: "primary" },
     ctaSecondary: {
       label: "Solicitar demo",
       href: "/contacto?producto=360sys",
