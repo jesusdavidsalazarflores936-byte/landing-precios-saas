@@ -77,7 +77,7 @@ export function Modal({
       {/* Backdrop */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+        className="absolute inset-0 bg-foreground/50 backdrop-blur-sm"
         onClick={closeOnBackdrop ? onClose : undefined}
       />
 
@@ -89,7 +89,7 @@ export function Modal({
         aria-label={title}
         tabIndex={-1}
         className={[
-          "relative z-10 w-full bg-white rounded-t-2xl sm:rounded-2xl shadow-2xl",
+          "relative z-10 w-full bg-card rounded-t-2xl sm:rounded-2xl shadow-2xl",
           "focus:outline-none",
           "max-h-[90dvh] overflow-y-auto",
           sizeClasses[size],
@@ -101,13 +101,13 @@ export function Modal({
       >
         {/* Header */}
         {title && (
-          <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100 sticky top-0 bg-white z-10">
-            <h2 className="text-lg font-semibold text-gray-900">{title}</h2>
+          <div className="flex items-center justify-between px-6 py-4 border-b border-border sticky top-0 bg-card z-10">
+            <h2 className="text-lg font-semibold text-foreground">{title}</h2>
             <button
               type="button"
               onClick={onClose}
               aria-label="Cerrar modal"
-              className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+              className="p-1.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +141,7 @@ export function ModalFooter({ className = "", children }: ModalSectionProps) {
   return (
     <div
       className={[
-        "mt-6 pt-4 border-t border-gray-100 flex flex-col sm:flex-row gap-3",
+        "mt-6 pt-4 border-t border-border flex flex-col sm:flex-row gap-3",
         className,
       ]
         .filter(Boolean)

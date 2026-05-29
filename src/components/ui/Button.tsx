@@ -34,15 +34,15 @@ type ButtonProps = NativeButtonProps | AnchorButtonProps;
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-[#ff5f57] text-white shadow-sm shadow-[#ff5f57]/20 hover:bg-[#f04f48] active:bg-[#d94840] focus-visible:ring-[#ff5f57]",
+    "bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 active:bg-primary/80 focus-visible:ring-primary",
   secondary:
-    "bg-gray-100 text-gray-900 hover:bg-gray-200 active:bg-gray-300 focus-visible:ring-[#ff5f57]",
+    "bg-secondary text-secondary-foreground hover:bg-secondary/80 active:bg-secondary focus-visible:ring-primary",
   ghost:
-    "bg-transparent text-gray-700 hover:bg-[#fff0ee] active:bg-[#ffe3df] focus-visible:ring-[#ff5f57]",
+    "bg-transparent text-foreground hover:bg-accent active:bg-accent/80 focus-visible:ring-primary",
   outline:
-    "bg-transparent border border-[#ff5f57] text-[#d94840] hover:bg-[#fff0ee] active:bg-[#ffe3df] focus-visible:ring-[#ff5f57]",
+    "bg-transparent border border-primary text-primary hover:bg-accent active:bg-accent/80 focus-visible:ring-primary",
   danger:
-    "bg-red-600 text-white hover:bg-red-700 active:bg-red-800 focus-visible:ring-red-500",
+    "bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/80 focus-visible:ring-primary",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {

@@ -16,10 +16,10 @@ interface CardSectionProps {
 }
 
 const variantClasses: Record<CardVariant, string> = {
-  default: "bg-white border border-gray-200",
-  outlined: "bg-transparent border-2 border-gray-300",
-  elevated: "bg-white shadow-lg border border-gray-100",
-  highlighted: "bg-white border-2 border-indigo-500 shadow-md shadow-indigo-100",
+  default: "bg-card border border-border",
+  outlined: "bg-transparent border-2 border-border",
+  elevated: "bg-card shadow-lg border border-border",
+  highlighted: "bg-card border-2 border-primary shadow-md",
 };
 
 const paddingClasses = {
@@ -70,7 +70,7 @@ export function CardBody({ className = "", children }: CardSectionProps) {
 
 export function CardFooter({ className = "", children }: CardSectionProps) {
   return (
-    <div className={["mt-6 pt-4 border-t border-gray-100", className].filter(Boolean).join(" ")}>
+    <div className={["mt-6 pt-4 border-t border-border", className].filter(Boolean).join(" ")}>
       {children}
     </div>
   );

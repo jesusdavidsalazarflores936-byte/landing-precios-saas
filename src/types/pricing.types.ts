@@ -31,6 +31,11 @@ export interface PlanFeature {
   highlighted?: boolean;           // Visually emphasize this feature
 }
 
+export interface DetailedPlanFeature {
+  title: string;
+  description: string;
+}
+
 // ─── Pricing Plan ────────────────────────────────────────────────────────────
 
 export type PlanTier = "free" | "starter" | "pro" | "business" | "enterprise";
@@ -53,6 +58,7 @@ export interface PricingPlan {
   description: string;
   price: PlanPrice;
   features: PlanFeature[];
+  detailedFeatures?: DetailedPlanFeature[];
   cta: CtaButton;
   badge?: string;                  // e.g. "Más popular", "Nuevo"
   isHighlighted?: boolean;         // Visually featured card
@@ -89,12 +95,14 @@ export interface Addon {
   slug: string;
   name: string;
   description: string;
+  tagline?: string;
   category: AddonCategory;
   iconUrl?: string;
   price: AddonPrice;
   compatiblePlanIds: string[];     // Which plans can purchase this addon
   requiredPlanIds?: string[];      // Plans that REQUIRE this addon to be shown
   features?: string[];             // Short bullet list of what's included
+  detailedFeatures?: DetailedPlanFeature[];
   isAvailable: boolean;
   badge?: string;                  // e.g. "Beta", "Nuevo"
 }

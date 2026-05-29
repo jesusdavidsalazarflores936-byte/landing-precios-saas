@@ -19,17 +19,17 @@ export function PricingModules({
     <section
       id="modulos"
       aria-labelledby="modules-heading"
-      className="bg-slate-50 px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
+      className="bg-secondary px-4 py-16 text-secondary-foreground sm:px-6 sm:py-20 lg:px-8"
     >
       <Container size="xl" padded={false}>
         <div className="mx-auto mb-10 max-w-3xl text-center">
           <h2
             id="modules-heading"
-            className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl"
+            className="text-3xl font-bold tracking-tight text-secondary-foreground sm:text-4xl"
           >
             Personaliza tu plan con Módulos Adicionales
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-base leading-7 text-slate-500">
+          <p className="mx-auto mt-3 max-w-2xl text-base leading-7 text-secondary-foreground/80">
             Potencia tu plan base con los módulos que necesita tu operación. Actívalos cuando quieras.
           </p>
         </div>

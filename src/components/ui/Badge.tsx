@@ -20,23 +20,23 @@ interface BadgeProps {
 }
 
 const variantClasses: Record<BadgeVariant, string> = {
-  default: "bg-gray-100 text-gray-700",
-  primary: "bg-indigo-100 text-indigo-700",
-  success: "bg-emerald-100 text-emerald-700",
-  warning: "bg-amber-100 text-amber-700",
-  danger: "bg-red-100 text-red-700",
-  info: "bg-sky-100 text-sky-700",
-  required: "bg-orange-100 text-orange-700 font-semibold",
+  default: "bg-muted text-muted-foreground",
+  primary: "bg-accent text-accent-foreground",
+  success: "bg-accent text-accent-foreground",
+  warning: "bg-accent text-accent-foreground",
+  danger: "bg-accent text-accent-foreground",
+  info: "bg-secondary text-secondary-foreground",
+  required: "bg-accent text-accent-foreground font-semibold",
 };
 
 const dotColors: Record<BadgeVariant, string> = {
-  default: "bg-gray-500",
-  primary: "bg-indigo-500",
-  success: "bg-emerald-500",
-  warning: "bg-amber-500",
-  danger: "bg-red-500",
-  info: "bg-sky-500",
-  required: "bg-orange-500",
+  default: "bg-muted-foreground",
+  primary: "bg-primary",
+  success: "bg-primary",
+  warning: "bg-primary",
+  danger: "bg-primary",
+  info: "bg-secondary-foreground",
+  required: "bg-primary",
 };
 
 const sizeClasses: Record<BadgeSize, string> = {

@@ -3,18 +3,23 @@ import type { PricingPageConfig } from "./pricing.types";
 
 
 export interface BrandColors {
-  primary: string;       // e.g. "#6366F1"
+  primary: string;
   primaryForeground: string;
   secondary: string;
   secondaryForeground: string;
-  accent: string;
-  accentForeground: string;
-  background: string;
-  foreground: string;
-  muted: string;
-  mutedForeground: string;
-  border: string;
-  destructive: string;
+  
+  // Agrega estas nuevas líneas como opcionales:
+  background?: string;
+  foreground?: string;
+  card?: string;
+  cardForeground?: string;
+  border?: string;
+  muted?: string;
+  mutedForeground?: string;
+  accent?: string;
+  accentForeground?:string;
+  destructive?: string;
+  destructiveForegound?: string;
 }
 
 export interface BrandConfig {

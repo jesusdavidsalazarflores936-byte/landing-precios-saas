@@ -30,7 +30,7 @@ function AccordionItemComponent({
   panelId,
 }: AccordionItemProps) {
   return (
-    <div className="border border-gray-200 rounded-xl overflow-hidden">
+    <div className="relative z-0 overflow-hidden rounded-lg border border-primary/20 bg-transparent shadow-sm">
       <h3>
         <button
           type="button"
@@ -40,16 +40,16 @@ function AccordionItemComponent({
           onClick={onToggle}
           className={[
             "w-full flex items-center justify-between gap-4 px-5 py-4 text-left",
-            "text-gray-900 font-medium text-sm sm:text-base",
-            "bg-white hover:bg-gray-50 transition-colors duration-150",
-            "focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-500",
+            "font-medium text-sm sm:text-base",
+            "bg-transparent text-current transition-colors duration-150",
+            "focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary",
           ].join(" ")}
         >
           <span>{item.question}</span>
           <span
             aria-hidden="true"
             className={[
-              "shrink-0 w-5 h-5 flex items-center justify-center text-gray-400 transition-transform duration-200",
+              "shrink-0 w-5 h-5 flex items-center justify-center transition-transform duration-200",
               isOpen ? "rotate-180" : "",
             ].join(" ")}
           >
@@ -73,8 +73,9 @@ function AccordionItemComponent({
         id={panelId}
         role="region"
         aria-labelledby={headingId}
-        hidden={!isOpen}
-        className="px-5 pb-5 pt-1 text-gray-600 text-sm sm:text-base leading-relaxed bg-white"
+        aria-hidden={!isOpen}
+        data-state={isOpen ? "open" : "closed"}
+        className="origin-top overflow-hidden bg-transparent px-5 pt-0 pb-0 text-current text-sm leading-relaxed opacity-0 transition-all duration-500 ease-in-out [transform:perspective(350px)_rotateX(-90deg)] max-h-0 data-[state=open]:max-h-96 data-[state=open]:pt-1 data-[state=open]:pb-5 data-[state=open]:opacity-80 data-[state=open]:[transform:perspective(350px)_rotateX(0deg)] sm:text-base"
       >
         {item.answer}
       </div>

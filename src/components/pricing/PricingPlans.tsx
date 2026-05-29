@@ -8,12 +8,12 @@ interface PricingPlansProps {
 
 export function PricingPlans({ plans, period }: PricingPlansProps) {
   return (
-    <section id="precios" className="bg-white px-4 py-16 sm:px-6 lg:px-8">
+    <section id="precios" className="bg-background px-4 py-16 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           Plan base
         </h2>
-        <p className="mt-3 text-base leading-7 text-slate-500">
+        <p className="mt-3 text-base leading-7 text-muted-foreground">
           Empieza con el núcleo obligatorio y agrega módulos según necesites.
         </p>
       </div>

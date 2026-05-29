@@ -32,7 +32,7 @@ export function PricingLanding({ config }: PricingLandingProps) {
       
 
       <main>
-        <div className="border-b border-gray-100 bg-white py-3">
+        <div className="border-b border-border bg-background py-3">
           <div className="flex justify-center">
             <BillingToggle
               config={pricing.billingToggle}

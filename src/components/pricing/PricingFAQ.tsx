@@ -19,17 +19,17 @@ export function PricingFAQ({ items }: PricingFAQProps) {
     <section
       id="faq"
       aria-labelledby="faq-heading"
-      className="bg-[#f8fafc] px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
+      className="bg-secondary text-secondary-foreground px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
     >
       <Container size="md" padded={false}>
         <div className="mx-auto mb-10 max-w-2xl text-center">
           <h2
             id="faq-heading"
-            className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl"
+            className="text-3xl font-bold tracking-tight text-secondary-foreground sm:text-4xl"
           >
             Preguntas Frecuentes
           </h2>
-          <p className="mt-3 text-base leading-7 text-slate-500">
+          <p className="mt-3 text-base leading-7 text-secondary-foreground/70">
             Todo lo que necesitas saber antes de empezar.
           </p>
         </div>

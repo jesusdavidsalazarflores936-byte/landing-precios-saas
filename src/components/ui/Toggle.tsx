@@ -29,14 +29,14 @@ export function Toggle<T extends string>({
       role="radiogroup"
       aria-label={ariaLabel}
       className={[
-        "relative inline-grid min-h-11 w-full max-w-[22rem] grid-cols-2 items-center overflow-hidden rounded-full border border-slate-200 bg-white p-1 shadow-sm sm:w-auto sm:min-w-[20rem]",
+        "relative inline-grid min-h-11 w-full max-w-[22rem] grid-cols-2 items-center overflow-hidden rounded-full border border-border bg-card p-1 shadow-sm sm:w-auto sm:min-w-[20rem]",
         className,
       ].join(" ")}
     >
       <span
         aria-hidden="true"
         className={[
-          "absolute inset-y-1 left-1 w-[calc(50%-0.25rem)] rounded-full bg-[#ff5f57] shadow-sm transition-all duration-300 ease-out",
+          "absolute inset-y-1 left-1 w-[calc(50%-0.25rem)] rounded-full bg-primary shadow-sm transition-all duration-300 ease-out",
           translateClass,
         ].join(" ")}
       />
@@ -53,10 +53,10 @@ export function Toggle<T extends string>({
             onClick={() => onChange(option.value)}
             className={[
               "relative z-10 inline-flex min-h-9 items-center justify-center gap-1.5 rounded-full px-4 text-sm font-semibold transition-all duration-300 ease-out",
-              "focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ff5f57] focus-visible:ring-offset-2",
+              "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2",
               isActive
-                ? "text-white"
-                : "text-slate-500 hover:text-slate-900",
+                ? "text-primary-foreground"
+                : "text-muted-foreground hover:text-foreground",
             ]
               .filter(Boolean)
               .join(" ")}
@@ -67,8 +67,8 @@ export function Toggle<T extends string>({
                 className={[
                   "hidden items-center rounded-full px-2 py-0.5 text-xs font-semibold transition-all duration-300 ease-out sm:inline-flex",
                   isActive
-                    ? "bg-white/20 text-white"
-                    : "bg-[#fff0ee] text-[#d94840]",
+                    ? "bg-primary-foreground/20 text-primary-foreground"
+                    : "bg-accent text-accent-foreground",
                 ].join(" ")}
               >
                 {option.badge}
