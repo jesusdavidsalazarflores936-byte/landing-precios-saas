@@ -23,7 +23,7 @@ const config: ProductFullConfig = {
   },
 
   seo: {
-    title: "360sys — Ecosistema de gestión integral para tu negocio",
+    title: "360sys - Ecosistema de gestión integral para tu negocio",
     description:
       "Punto de venta, facturación electrónica, control de existencias, reportes y módulos adicionales para operar tu negocio con orden.",
     canonicalUrl: "https://tusaas.pe/360sys",
@@ -37,7 +37,7 @@ const config: ProductFullConfig = {
     ctaPrimary: { label: "Ver precios", href: "#precios", variant: "primary" },
     ctaSecondary: {
       label: "Solicitar demo",
-      href: "/contacto?producto=360sys",
+      href: "#demo-form",
       variant: "outline",
     },
   },
@@ -67,7 +67,7 @@ const config: ProductFullConfig = {
         tier: "starter",
         name: "Punto de venta + Facturación electrónica",
         description:
-          "El corazón operativo de tu negocio. Desde el primer saludo al cliente hasta el cierre de caja, este módulo centraliza todo lo que necesitas para vender más rápido, cobrar con precisión y cumplir con SUNAT sin complicaciones.",
+          "El corazón operativo de tu negocio. Desde el primer saludo al cliente hasta el cierre de caja, este módulo centraliza todo lo que necesitas para vender más rápido, cobrar con precisión y cumplir con SUNAT sin complicaciones. Diseñado para que tú y tu equipo trabajen con agilidad, control total y cero errores.",
         isRequired: true,
         requiredPlanNote: "Plan base obligatorio",
         price: {
@@ -81,49 +81,49 @@ const config: ProductFullConfig = {
             id: "plataforma-cajero",
             label: "Plataforma para cajero",
             description:
-              "Experiencia de venta fluida. Gestiona ventas minoristas, mayoristas, promociones y créditos. Conversión automática de unidades. Aprobación por clave para anulaciones o descuentos. Acepta efectivo, tarjetas, Yape o Plin. Control de caja chica y cuadre de turnos.",
+              "Venta fluida con múltiples tipos de venta, aprobación por clave, pagos flexibles, control de caja chica y cuadre de turnos.",
             value: true,
           },
           {
             id: "creditos",
             label: "Créditos",
             description:
-              "Vende al crédito sin perder el control. Seguimiento en tiempo real de cuentas por cobrar y alertas de vencimiento.",
+              "Seguimiento en tiempo real de cuentas por cobrar y alertas de vencimiento.",
             value: true,
           },
           {
             id: "cotizaciones",
             label: "Cotizaciones",
             description:
-              "Genera cotizaciones detalladas y conviértelas en ventas con un solo clic.",
+              "Cotizaciones profesionales que se convierten en ventas con un solo clic.",
             value: true,
           },
           {
             id: "pedidos",
             label: "Pedidos",
             description:
-              "Organiza pedidos anticipados para recojo, delivery o envíos nacionales con visibilidad completa del estado.",
+              "Pedidos anticipados para recojo, delivery o envíos nacionales con seguimiento completo.",
             value: true,
           },
           {
             id: "compras",
             label: "Compras",
             description:
-              "Gestiona proveedores, registra compras, vincula egresos y lleva el historial de costos por producto. Control de cuentas por pagar.",
+              "Gestión de proveedores, documentos de compra, egresos, costos y cuentas por pagar.",
             value: true,
           },
           {
             id: "control-existencias",
             label: "Control de existencias",
             description:
-              "Catálogo por categorías y marcas. Múltiples precios de venta. Entradas, salidas, trazabilidad, y seguimiento por lote y vencimiento.",
+              "Catálogo, múltiples precios, trazabilidad, lotes, vencimientos e historial de movimientos.",
             value: true,
           },
           {
             id: "facturacion-electronica",
             label: "Facturación electrónica",
             description:
-              "Emite boletas, facturas, notas de crédito y guías. Envío ilimitado a SUNAT. Envío automático de comprobantes al cliente por correo o WhatsApp.",
+              "Emisión automática de boletas, facturas, notas de crédito, anulaciones y guías de remisión.",
             value: true,
           },
         ],
@@ -131,42 +131,42 @@ const config: ProductFullConfig = {
           {
             title: "Plataforma para cajero",
             description:
-              "Experiencia de venta fluida. Gestiona ventas minoristas, mayoristas, promociones y créditos. Conversión automática de unidades. Aprobación por clave para anulaciones o descuentos. Acepta efectivo, tarjetas, Yape o Plin. Control de caja chica y cuadre de turnos.",
+              "Una experiencia de venta fluida, pensada para la velocidad y la precisión en el punto de atención. Gestiona múltiples tipos de venta -minorista, mayorista, promoción y crédito- y trabaja con productos en distintas presentaciones gracias a la conversión automática de unidades. ¿Necesitas anular un producto, aplicar un descuento o registrar una cortesía? Todo queda protegido por clave de aprobación del administrador, garantizando el orden y seguridad en cada operación. Acepta pagos en efectivo, tarjetas y billeteras digitales como Yape o Plin. Controla tu caja chica con registros detallados de ingresos y gastos, y cierra cada turno con un cuadre completo que refleja exactamente lo que pasó.",
           },
           {
             title: "Créditos",
             description:
-              "Vende al crédito sin perder el control. Seguimiento en tiempo real de cuentas por cobrar y alertas de vencimiento.",
+              "Vende al crédito sin perder el control. Haz seguimiento en tiempo real de todas tus cuentas por cobrar, con alertas de vencimiento que te avisan antes de que una deuda se convierta en un problema. Mantén tu flujo de caja saludable y tus relaciones comerciales al día.",
           },
           {
             title: "Cotizaciones",
             description:
-              "Genera cotizaciones detalladas y conviértelas en ventas con un solo clic.",
+              "Presenta tus productos y servicios de forma profesional antes de cerrar la venta. Genera cotizaciones detalladas para tus clientes empresariales -con condiciones, precios y observaciones- y cuando estén listos para comprar, conviértelas en ventas con un solo clic, con la posibilidad de ajustar lo que necesites en el camino.",
           },
           {
             title: "Pedidos",
             description:
-              "Organiza pedidos anticipados para recojo, delivery o envíos nacionales con visibilidad completa del estado.",
+              "Organiza y controla cada pedido anticipado, ya sea para recojo en tienda, delivery o envíos a nivel nacional. Desde el momento en que se registra el pago adelantado hasta que el producto llega a manos del cliente, tendrás visibilidad completa del estado de cada pedido, eliminando confusiones y asegurando una entrega impecable.",
           },
           {
             title: "Compras",
             description:
-              "Gestiona proveedores, registra compras, vincula egresos y lleva el historial de costos por producto. Control de cuentas por pagar.",
+              "Gestiona tus proveedores y tus compras en un solo lugar. Registra cada documento de compra, vincula los egresos correspondientes y lleva el historial de evolución de costos por producto para negociar siempre desde una posición informada. Además, controla tus cuentas por pagar para que ningún vencimiento te tome por sorpresa.",
           },
           {
             title: "Control de existencias",
             description:
-              "Catálogo por categorías y marcas. Múltiples precios de venta. Entradas, salidas, trazabilidad, y seguimiento por lote y vencimiento.",
+              "Tu almacén siempre ordenado y bajo control. Organiza tu catálogo de productos por categorías y marcas, maneja múltiples precios de venta con márgenes de ganancia configurables, y registra entradas y salidas con total trazabilidad. Lleva el seguimiento de productos perecibles por lote y fecha de vencimiento, y consulta el historial completo de movimientos cuando lo necesites.",
           },
           {
             title: "Facturación electrónica",
             description:
-              "Emite boletas, facturas, notas de crédito y guías. Envío ilimitado a SUNAT. Envío automático de comprobantes al cliente por correo o WhatsApp.",
+              "Cumple con SUNAT de forma automática y sin esfuerzo. Emite boletas, facturas, notas de crédito, anulaciones y guías de remisión directamente desde el sistema, con envío ilimitado de comprobantes electrónicos. Cuando anulas una venta, el comprobante se anula solo. Y para que tus clientes reciban su documento al instante, el sistema lo envía automáticamente por correo o WhatsApp.",
           },
         ],
         cta: {
-          label: "Comenzar ahora",
-          href: "/contacto",
+          label: "Solicitar demo",
+          href: "#demo-form",
           variant: "primary",
         },
         badge: "Obligatorio",
@@ -180,7 +180,7 @@ const config: ProductFullConfig = {
         name: "Comercio inteligente",
         tagline: "Transforma los datos de tu negocio en gráficos e indicadores.",
         description:
-          "Transforma los datos de tu negocio en gráficos, indicadores y análisis accionables para tomar mejores decisiones.",
+          "Tomar buenas decisiones requiere información clara y oportuna. Este módulo transforma los datos de tu negocio en gráficos, indicadores y análisis accionables que te permiten entender qué está funcionando, qué necesita atención y hacia dónde dirigir tus esfuerzos. Deja de operar por intuición y empieza a crecer con inteligencia.",
         category: "analytics",
         price: {
           amountMonthly: 50,
@@ -191,30 +191,30 @@ const config: ProductFullConfig = {
         compatiblePlanIds: ["pos-facturacion"],
         features: [
           "Estadísticas y análisis de ventas",
-          "Estadísticas de inventario",
-          "Estadísticas de rentabilidad",
-          "Ingresos y gastos de caja",
+          "Estadísticas y análisis de inventario",
+          "Estadísticas y análisis de rentabilidad",
+          "Estadísticas y análisis de ingresos y gastos de caja",
         ],
         detailedFeatures: [
           {
             title: "Estadísticas y análisis de ventas",
             description:
-              "Conoce ingresos totales, picos de actividad, categorías estrella y compara rendimientos mensuales.",
+              "Conoce el pulso real de tus ventas en cada dimensión. Visualiza tus ingresos totales, identifica los momentos del día con mayor actividad, analiza qué categorías y productos generan más dinero, y compara el rendimiento de este mes frente al anterior. Desde la estacionalidad hasta el desglose por método de pago y tipo de comprobante, tendrás todos los datos que necesitas para vender más y mejor.",
           },
           {
-            title: "Estadísticas de inventario",
+            title: "Estadísticas y análisis de inventario",
             description:
-              "Indicadores de stock óptimo y alertas de reposición para no quedarte sin mercadería.",
+              "Nunca más te quedes sin stock ni acumules productos que no rotan. Visualiza el estado de tu inventario con indicadores de stock óptimo y alertas de reposición, para que siempre tengas disponible lo que tus clientes buscan y liberes espacio de lo que no se mueve.",
           },
           {
-            title: "Estadísticas de rentabilidad",
+            title: "Estadísticas y análisis de rentabilidad",
             description:
-              "Analiza tu rentabilidad bruta, descubre los productos más rentables y entiende el impacto de tus egresos.",
+              "Vender mucho no siempre significa ganar mucho. Analiza tu rentabilidad bruta, descubre cuáles son tus productos y categorías más rentables, y entiende cómo cada tipo de egreso impacta en tus ganancias reales. Con esta información, podrás optimizar tu oferta y maximizar tus márgenes.",
           },
           {
-            title: "Ingresos y gastos de caja",
+            title: "Estadísticas y análisis de ingresos y gastos de caja",
             description:
-              "Monitorea la salud de tu caja. Analiza comportamiento diario, tendencias semanales y desglose de salidas de dinero.",
+              "Monitorea la salud financiera de tu caja con total claridad. Analiza el comportamiento diario de ingresos y egresos, observa las tendencias semanales, compara promedios y conoce en detalle a qué conceptos de pago se destinan tus salidas de dinero. Todo lo que necesitas para mantener un flujo de caja equilibrado y predecible.",
           },
         ],
         isAvailable: true,
@@ -226,7 +226,7 @@ const config: ProductFullConfig = {
         name: "Encuestas de opinión",
         tagline: "Mide la satisfacción y detecta oportunidades de mejora.",
         description:
-          "Crea encuestas personalizadas para medir la satisfacción, detectar oportunidades y tomar decisiones basadas en tus clientes.",
+          "La opinión de tus clientes es el activo más valioso que tienes para mejorar. Con este módulo, creas encuestas personalizadas que te permiten medir la satisfacción, detectar oportunidades de mejora y tomar decisiones basadas en lo que realmente sienten quienes visitan tu negocio. Escuchar a tus clientes nunca había sido tan fácil ni tan útil.",
         category: "analytics",
         price: {
           amountMonthly: 20,
@@ -237,24 +237,24 @@ const config: ProductFullConfig = {
         compatiblePlanIds: ["pos-facturacion"],
         features: [
           "Personalización",
-          "Avisos automáticos",
+          "Avisos automáticos de malas experiencias",
           "Reportes y estadísticas",
         ],
         detailedFeatures: [
           {
             title: "Personalización",
             description:
-              "Diseña encuestas con selección única, opción múltiple, estrellas o escala numérica adaptadas a tu objetivo.",
+              "Diseña encuestas a tu medida con una amplia variedad de formatos de pregunta: selección única, opción múltiple, confirmación de sí o no, escala de malo a excelente, valoración por estrellas o escala numérica personalizada. Adapta cada encuesta al objetivo que tengas -atención al cliente, calidad del producto, experiencia en tienda- y obtén respuestas precisas y comparables.",
           },
           {
-            title: "Avisos automáticos",
+            title: "Avisos automáticos de malas experiencias",
             description:
-              "Recibe notificaciones inmediatas en WhatsApp ante una mala experiencia para actuar y fidelizar al instante.",
+              "No esperes hasta que un cliente molesto lo publique en redes. Cuando una encuesta refleja una mala experiencia, recibes una notificación inmediata en tu WhatsApp con el detalle de la compra y el colaborador que atendió, para que puedas actuar de inmediato, resolver la situación y convertir una experiencia negativa en una oportunidad de fidelización.",
           },
           {
             title: "Reportes y estadísticas",
             description:
-              "Resultados agrupados por atención, producto, local o experiencia general para decisiones fundamentadas.",
+              "Más allá de las respuestas individuales, accede a un panorama completo de lo que piensan tus clientes. Consulta los resultados agrupados por dimensión -atención, producto, local, experiencia general- y toma decisiones de mejora fundamentadas en datos reales, no en suposiciones.",
           },
         ],
         isAvailable: true,
@@ -263,9 +263,9 @@ const config: ProductFullConfig = {
         id: "tienda-virtual",
         slug: "tienda-virtual",
         name: "Tienda virtual",
-        tagline: "Lleva tu marca al mundo digital con una experiencia 24/7.",
+        tagline: "Tu negocio disponible 24/7 en el mundo digital.",
         description:
-          "Lleva tu marca al mundo digital con una experiencia de compra 24/7 conectada a tu operación diaria.",
+          "Tu negocio merece estar disponible las 24 horas, los 7 días de la semana, para cualquier cliente en cualquier lugar. Con nuestra tienda virtual desarrollada a medida, llevas tu marca al mundo digital con una experiencia de compra moderna, atractiva y completamente integrada con tu operación diaria. Sin complicaciones técnicas, sin doble gestión: todo conectado desde un solo sistema.",
         category: "other",
         price: {
           amountMonthly: 0,
@@ -285,22 +285,22 @@ const config: ProductFullConfig = {
           {
             title: "Personalización",
             description:
-              "Tienda a medida con dominio propio y propuesta visual adaptada a la identidad de tu marca.",
+              "Tu tienda, tu identidad. Diseñamos y desarrollamos una tienda virtual única, adaptada al estilo y las necesidades específicas de tu negocio, con dominio propio y una propuesta visual que refleja lo que tu marca representa.",
           },
           {
             title: "Fácil gestión",
             description:
-              "Se alimenta de tu catálogo de Punto de venta. Precios, stock y descripciones se sincronizan automáticamente.",
+              "Olvídate de mantener dos catálogos distintos. Tu tienda virtual se alimenta directamente del catálogo de productos que ya usas en tu Punto de venta, por lo que cualquier actualización de precios, stock o descripción se refleja de forma automática en tu tienda en línea.",
           },
           {
             title: "Interactividad",
             description:
-              "Los clientes arman su carrito, eligen variables (tallas, colores) basados en stock real y navegan sin fricciones.",
+              "Ofrece a tus clientes una experiencia de compra completa y sin fricciones. Podrán armar su carrito, elegir entre las tallas y colores disponibles según el stock real en tiempo real, y navegar por tu catálogo con toda la información que necesitan para decidir con confianza.",
           },
           {
             title: "Pasarela de pago",
             description:
-              "Pagos seguros. Los pedidos llegan automáticamente a tu Punto de venta para procesamiento inmediato.",
+              "Tus clientes pagan de forma segura y autónoma directamente desde la tienda. Una vez confirmado el pago, el pedido llega automáticamente a tu Punto de venta para que puedas procesarlo de inmediato. Menos pasos, menos errores, más ventas.",
           },
         ],
         isAvailable: true,
@@ -309,9 +309,9 @@ const config: ProductFullConfig = {
         id: "atencion-reservas",
         slug: "atencion-reservas",
         name: "Atención y reservas",
-        tagline: "Gestiona citas, turnos y reservas sin cruces de horario.",
+        tagline: "Organiza la agenda de tu equipo y evita cruces de horarios.",
         description:
-          "Ideal para citas y turnos. Gestiona el tiempo de tus estaciones con precisión y elimina cruces de horario.",
+          "Si tu negocio funciona por citas, turnos o reservas, como campos deportivas o servicios de belleza y spa, este módulo es tu aliado para mantener la agenda siempre organizada y tu equipo siempre preparado. Gestiona el tiempo de tus estaciones de atención con precisión, elimina cruces de horario y garantiza que cada cliente reciba el servicio que merece, exactamente cuando lo espera.",
         category: "other",
         price: {
           amountMonthly: 60,
@@ -321,25 +321,25 @@ const config: ProductFullConfig = {
         },
         compatiblePlanIds: ["pos-facturacion"],
         features: [
-          "Agenda y calendario",
+          "Agenda diaria y calendario semanal / mensual",
           "Pagos anticipados",
           "Recordatorios de asistencia",
         ],
         detailedFeatures: [
           {
-            title: "Agenda y calendario",
+            title: "Agenda diaria y calendario semanal / mensual",
             description:
-              "Visualiza reservas en agenda diaria o calendario mensual. Diferencia citas pagadas de pendientes.",
+              "Visualiza toda tu operación de un vistazo. Gestiona tus reservas en una agenda diaria o en un calendario semanal y mensual, diferenciando de forma clara cuáles tienen pago adelantado registrado y cuáles están pendientes. Todo el orden que necesitas para que ningún turno se pierda ni se duplique.",
           },
           {
             title: "Pagos anticipados",
             description:
-              "Registra adelantos, genera comprobantes y refleja el ingreso en tu caja chica de forma automática.",
+              "Asegura la reserva y cuida tu caja. Registra los pagos adelantados de tus clientes, genera el comprobante correspondiente y refleja automáticamente el ingreso en tu caja chica. Así, tu cuadre de dinero siempre estará completo y sin vacíos al final del día.",
           },
           {
             title: "Recordatorios de asistencia",
             description:
-              "Envía recordatorios automáticos por WhatsApp o correo antes de la cita para reducir ausencias.",
+              "Reduce las ausencias antes de que ocurran. Envía recordatorios automáticos por WhatsApp o correo electrónico a tus clientes antes de su cita o reserva. Un mensaje a tiempo puede marcar la diferencia entre un turno lleno y un espacio desperdiciado.",
           },
         ],
         isAvailable: true,
@@ -348,9 +348,9 @@ const config: ProductFullConfig = {
         id: "historia-medica",
         slug: "historia-medica",
         name: "Historia médica veterinaria",
-        tagline: "Centraliza la información clínica y administrativa.",
+        tagline: "Centraliza la información clínica y administrativa de tus pacientes.",
         description:
-          "Centraliza la información clínica y administrativa de tus pacientes para optimizar los procesos de tu clínica.",
+          "Tu clínica veterinaria merece una gestión tan profesional como la atención que brindas. Este módulo centraliza toda la información clínica y administrativa de tus pacientes en un solo lugar, optimizando los procesos internos y elevando la calidad del servicio. Para que tú y tu equipo puedan enfocarse en lo que realmente importa: el bienestar de cada mascota.",
         category: "other",
         price: {
           amountMonthly: 50,
@@ -369,22 +369,22 @@ const config: ProductFullConfig = {
           {
             title: "Gestión administrativa",
             description:
-              "Perfil completo por paciente (datos, especie, raza, historial). Elimina el desorden del papel.",
+              "Accede en segundos al perfil completo de cada paciente: datos del propietario, especie, raza e historial de atenciones previas. Mantén toda la información organizada y disponible para cualquier miembro del equipo, reduciendo tiempos de búsqueda y eliminando el desorden del papel.",
           },
           {
             title: "Citas y atenciones",
             description:
-              "Control de consultas, alertas de citas, recordatorios automáticos y documentación de diagnósticos y tratamientos.",
+              "Lleva el control completo de cada consulta, desde la programación hasta el diagnóstico. Recibe alertas de citas pendientes, envía recordatorios automáticos a los dueños de las mascotas y documenta diagnósticos, tratamientos y observaciones clínicas de forma estructurada y siempre accesible para futuras atenciones.",
           },
           {
             title: "Plan de vacunación",
             description:
-              "Configura planes personalizados y activa recordatorios automáticos para los refuerzos.",
+              "Protege a tus pacientes con un seguimiento preciso y puntual. Configura planes de vacunación personalizados para cada mascota y activa recordatorios automáticos para que ningún refuerzo quede olvidado. Una gestión preventiva efectiva que fortalece la confianza de los propietarios en tu clínica.",
           },
           {
             title: "Hospitalizaciones",
             description:
-              "Documenta el estado en tiempo real, tratamientos aplicados e historial clínico para continuidad de atención en cambios de turno.",
+              "Cuando una mascota requiere internamiento, cada detalle cuenta. Documenta el estado del paciente en tiempo real durante toda su hospitalización, registra los tratamientos aplicados y construye un historial clínico confiable que garantiza la continuidad de la atención, sin importar quién esté a cargo del turno.",
           },
         ],
         isAvailable: true,
@@ -397,14 +397,14 @@ const config: ProductFullConfig = {
           id: "f1",
           question: "¿Puedo usar solo el Punto de Venta sin módulos adicionales?",
           answer:
-            "Sí, el plan base incluye POS, Facturación Electrónica y gestión esencial. Los módulos adicionales son opcionales y se añaden según tus necesidades.",
+            "Sí, el plan base incluye POS, Facturación Electrónica y gestión esencial. Los módulos como Tienda Virtual, Veterinaria o Reservas son opcionales y se añaden según tus necesidades.",
           sortOrder: 1,
         },
         {
           id: "f2",
-          question: "¿La tienda virtual se sincroniza con mi stock físico?",
+          question: "¿El módulo de Tienda Virtual se sincroniza con mi stock físico?",
           answer:
-            "Sí, la tienda virtual se alimenta del catálogo y stock real de tu Punto de Venta para mantener precios y existencias actualizados.",
+            "Totalmente. Tu tienda virtual se alimenta directamente del catálogo y stock real de tu Punto de Venta, por lo que precios y existencias se actualizan automáticamente en ambos canales.",
           sortOrder: 2,
         },
       ],
@@ -421,7 +421,7 @@ const config: ProductFullConfig = {
       },
       ctaSecondary: {
         label: "Agendar demo",
-        href: "/contacto?producto=360sys",
+        href: "#demo-form",
         variant: "outline",
       },
       trustSignals: [
@@ -435,12 +435,22 @@ const config: ProductFullConfig = {
     {
       question: "¿Puedo usar solo el Punto de Venta sin módulos adicionales?",
       answer:
-        "Sí, el plan base incluye POS, Facturación Electrónica y gestión esencial. Los módulos adicionales son opcionales y se añaden según tus necesidades.",
+        "Sí, el plan base incluye POS, Facturación Electrónica y gestión esencial. Los módulos como Tienda Virtual, Veterinaria o Reservas son opcionales y se añaden según tus necesidades.",
     },
     {
-      question: "¿La tienda virtual se sincroniza con mi stock físico?",
+      question: "¿El módulo de Tienda Virtual se sincroniza con mi stock físico?",
       answer:
-        "Totalmente. Tu tienda virtual se alimenta directamente del catálogo y stock real de tu Punto de Venta.",
+        "Totalmente. Tu tienda virtual se alimenta directamente del catálogo y stock real de tu Punto de Venta, por lo que precios y existencias se actualizan automáticamente en ambos canales.",
+    },
+    {
+      question: "¿Cómo ayuda el módulo de Veterinaria a mi clínica?",
+      answer:
+        "Centraliza la historia médica completa, citas, vacunas y hospitalizaciones, además de automatizar recordatorios para los propietarios.",
+    },
+    {
+      question: "¿Puedo manejar reservas o citas desde 360sys?",
+      answer:
+        "Sí. El módulo Atención y reservas permite organizar agenda diaria, calendario semanal o mensual, pagos anticipados y recordatorios automáticos.",
     },
   ],
 };
