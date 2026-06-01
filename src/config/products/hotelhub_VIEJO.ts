@@ -30,8 +30,8 @@ const config: ProductFullConfig = {
   },
 
   product: {
-    id: "hotel-hub",
-    slug: "hotel-hub",
+    id: "hotelhub",
+    slug: "hotelhub",
     name: "HotelHUB",
     tagline: "Software de gestión hotelera",
     description: "Administra habitaciones, reservas y facturación desde una sola plataforma.",

@@ -1,15 +1,15 @@
-import gesrest from "./products/gesrest";
-import hotelhub from "./products/hotelhub";
-import sys360 from "./products/360sys";
-import pulsoPlus from "./products/pulso-plus";
-import comprobanteE from "./products/comprobante-e";
+import sys360 from "@/config/products/360sys";
+import comprobanteE from "@/config/products/comprobante-e";
+import gesrest from "@/config/products/gesrest";
+import hotelhub from "@/config/products/hotelhub";
+import pulsoPlus from "@/config/products/pulso-plus";
 
 import type { ProductFullConfig } from "@/types/product.types";
 
 export const productConfigs = {
-  gesrest,
-  hotelhub,
   "360sys": sys360,
+  gesrest,
+  "hotel-hub": hotelhub,
   "pulso-plus": pulsoPlus,
   "comprobante-e": comprobanteE,
 } satisfies Record<string, ProductFullConfig>;
