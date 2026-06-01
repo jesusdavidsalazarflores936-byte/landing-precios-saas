@@ -63,7 +63,7 @@ const config: ProductFullConfig = {
           { id: "almacen", label: "Productos y almacén", value: true },
           { id: "turnos", label: "Gestión de turnos", value: true },
         ],
-        cta: { label: "Empezar ahora", href: "/registro?producto=hotelhub", variant: "primary" },
+        cta: { label: "Empezar ahora", href: "/contacto?producto=hotelhub", variant: "primary" },
         badge: "Requerido",
         sortOrder: 1,
         trialDays: 14,
@@ -149,7 +149,7 @@ const config: ProductFullConfig = {
       headline: "Moderniza la gestión de tu hotel",
       subheadline: "Todo bajo control, desde la reserva hasta el check-out.",
       backgroundVariant: "dark",
-      ctaPrimary: { label: "Empezar ", href: "/registro?producto=hotelhub", variant: "primary" },
+      ctaPrimary: { label: "Empezar ", href: "/contacto?producto=hotelhub", variant: "primary" },
       ctaSecondary: { label: "Agendar demo", href: "/contacto?producto=hotelhub", variant: "outline" },
       trustSignals: ["Sin instalación complicada", "Soporte dedicado", "Escalable a tu medida"],
     },
@@ -157,3 +157,4 @@ const config: ProductFullConfig = {
 };
 
 export default config;
+

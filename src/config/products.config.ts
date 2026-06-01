@@ -6,10 +6,11 @@ import pulsoPlus from "@/config/products/pulso-plus";
 
 import type { ProductFullConfig } from "@/types/product.types";
 
+
 export const productConfigs = {
   "360sys": sys360,
   gesrest,
-  "hotel-hub": hotelhub,
+  "hotelhub": hotelhub,
   "pulso-plus": pulsoPlus,
   "comprobante-e": comprobanteE,
 } satisfies Record<string, ProductFullConfig>;

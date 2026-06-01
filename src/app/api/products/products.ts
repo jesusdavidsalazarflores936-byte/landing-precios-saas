@@ -7,7 +7,7 @@ import comprobante from "@/config/products/comprobante-e";
 export const PRODUCTS: Record<string, unknown> = {
   "pulso-plus": pulsoPlus,
   "gesrest": gesrest,
-  "hotel-hub": hotelHub,
+  "hotelhub": hotelHub,
   "360sys": sys360,
   "comprobante-e": comprobante,
 };
