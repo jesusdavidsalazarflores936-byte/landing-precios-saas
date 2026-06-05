@@ -28,8 +28,8 @@ const config: ProductFullConfig = {
   },
 
   hero: {
-    headline: "Planes diseñados para tu restaurante",
-    subheadline: "Gestión gastronómica simplificada.",
+    headline: "Construye la solución perfecta para tu negocio",
+    subheadline: "Empieza con nuestro plan base y añade solo los módulos que necesitas. Transparente y sin complicaciones.",
     ctaPrimary: { label: "Comenzar ahora", href: "#demo-form", variant: "primary" },
     ctaSecondary: { label: "Solicitar demo", href: "/contacto?producto=gesrest", variant: "outline" },
   },
