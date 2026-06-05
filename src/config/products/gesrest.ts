@@ -296,8 +296,8 @@ const config: ProductFullConfig = {
       ],
     },
     finalCta: {
-      headline: "Simplifica la gestión de tu restaurante",
-      subheadline: "Empieza con el plan base y escala según las necesidades de tu negocio.",
+      headline: "¿Listo para optimizar tu restaurante?",
+      subheadline: "Únete a +200 restaurantes que ya usan GesRest para multiplicar sus beneficios.",
       backgroundVariant: "dark",
       ctaPrimary: { label: "Comenzar ahora", href: "#demo-form", variant: "primary" },
       ctaSecondary: { label: "Agendar demo", href: "/contacto?producto=gesrest", variant: "outline" },
