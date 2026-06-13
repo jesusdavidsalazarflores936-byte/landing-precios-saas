@@ -3,8 +3,8 @@ import type { ProductFullConfig } from "@/types/product.types";
 const config: ProductFullConfig = {
   brand: {
     name: "Comprobante-e",
-    logoUrl: "",
-    faviconUrl: "",
+    logoUrl: "https://comprobante-e.com/img/logo.png",
+    faviconUrl: "https://comprobante-e.com/img/favicon.png",
     colors: {
       primary: "#0F8FD6",
       primaryForeground: "#FFFFFF",
