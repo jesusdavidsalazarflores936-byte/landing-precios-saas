@@ -6,135 +6,195 @@ const config: ProductFullConfig = {
     logoUrl: "",
     faviconUrl: "",
     colors: {
-      primary: "#2563EB", primaryForeground: "#FFFFFF",
-      secondary: "#1E3A5F", secondaryForeground: "#FFFFFF",
-      accent: "#60A5FA", accentForeground: "#1E3A5F",
-      background: "#FFFFFF", foreground: "#0F172A",
-      muted: "#EFF6FF", mutedForeground: "#6B7280",
-      border: "#BFDBFE", destructive: "#EF4444",
+      primary: "#0F8FD6",
+      primaryForeground: "#FFFFFF",
+      secondary: "#1E3A5F",
+      secondaryForeground: "#FFFFFF",
+      accent: "#DFF4FF",
+      accentForeground: "#0F172A",
+      background: "#FFFFFF",
+      foreground: "#0F172A",
+      muted: "#F1F7FB",
+      mutedForeground: "#64748B",
+      border: "#CFE7F5",
+      destructive: "#EF4444",
     },
   },
 
   seo: {
-    title: "Comprobante-e — Facturación electrónica SUNAT",
-    description: "Emite boletas, facturas y más comprobantes electrónicos certificados ante SUNAT.",
-    canonicalUrl: "https://tusaas.pe/comprobante-e",
+    title: "Comprobante-e - Facturacion electronica SUNAT",
+    description:
+      "Emite, declara y consulta comprobantes electronicos ante SUNAT con soporte, portal web y alojamiento de documentos.",
+    canonicalUrl: "https://comprobante-e.com/precios",
     locale: "es-PE",
   },
 
   hero: {
-    headline: "Factura electrónica sin complicaciones",
-    subheadline: "Emite comprobantes válidos ante SUNAT en segundos, desde el portal o vía API.",
+    headline: "Sistema de facturacion electronica en la nube",
+    subheadline:
+      "Emite tus facturas y boletas electronicas con seguridad, declaracion automatica a SUNAT y consulta desde cualquier lugar.",
     ctaPrimary: { label: "Ver precios", href: "#precios", variant: "primary" },
-    ctaSecondary: { label: "Ver demo", href: "/contacto?producto=comprobante-e", variant: "outline" },
+    ctaSecondary: {
+      label: "Solicitar demo",
+      href: "/contacto?producto=comprobante-e",
+      variant: "outline",
+    },
   },
 
   product: {
     id: "comprobante-e",
     slug: "comprobante-e",
     name: "Comprobante-e",
-    tagline: "PSE certificado para facturación electrónica",
-    description: "PSE autorizado por SUNAT para emitir y gestionar todos tus comprobantes electrónicos.",
+    tagline: "Facturacion electronica para empresas conectadas a SUNAT",
+    description:
+      "Plataforma para emitir, declarar, consultar y alojar comprobantes electronicos de venta, guias, notas de credito y comunicaciones hacia SUNAT.",
     category: "core",
     isActive: true,
   },
 
   pricing: {
     billingToggle: {
-      defaultCycle: "annual",
-      annualDiscountPercent: 17,
-      annualDiscountLabel: "ahorra con el anual",
+      defaultCycle: "monthly",
+      annualDiscountPercent: 0,
+      annualDiscountLabel: "servicio mensual",
+      monthlyLabel: "Mensual",
+      annualLabel: "Anual",
     },
-    requiredPlanId: "compe_base",
+    requiredPlanId: "comprobante_base",
     plans: [
       {
-        id: "compe_base",
-        slug: "base",
+        id: "comprobante_base",
+        slug: "facturacion-electronica",
         tier: "starter",
-        name: "Emisor Esencial",
-        description: "Boletas, facturas y notas de crédito con portal web y API básica.",
+        name: "Modulo de Facturacion Electronica",
+        description:
+          "Emision y declaracion automatica a SUNAT de documentos electronicos de venta, guias, notas de credito, bajas y consultas de comprobantes.",
         isRequired: true,
-        requiredPlanNote: "Plan base para todos los emisores",
-        price: { amountMonthly: 49, amountAnnual: 41, currency: "PEN", currencySymbol: "S/" },
+        requiredPlanNote: "Instalacion S/100.00",
+        price: {
+          amountMonthly: 50,
+          amountAnnual: 50,
+          currency: "PEN",
+          currencySymbol: "S/",
+          priceLabel: "Alquiler mensual",
+        },
         features: [
-          { id: "boletas",   label: "Boletas electrónicas",        value: true },
-          { id: "facturas",  label: "Facturas electrónicas",       value: true },
-          { id: "notas",     label: "Notas de crédito y débito",   value: true },
-          { id: "portal",    label: "Portal web de emisión",       value: true },
-          { id: "api",       label: "API REST básica",             value: true },
-          { id: "volumen",   label: "Hasta 500 comprobantes/mes",  value: true },
+          { id: "instalacion", label: "Instalacion: S/100.00", value: true },
+          { id: "alquiler", label: "Alquiler mensual: S/50.00", value: true },
+          { id: "boletas-facturas", label: "Boletas y facturas electronicas", value: true },
+          { id: "guias", label: "Guias de remision remitente y transportista", value: true },
+          { id: "notas-credito", label: "Notas de credito y comunicacion de bajas", value: true },
+          { id: "sunat", label: "Declaracion automatica hacia SUNAT", value: true },
+          { id: "portal", label: "Portal de consulta para clientes", value: true },
+          { id: "contabilidad", label: "Cuenta para contabilidad", value: true },
         ],
-        cta: { label: "Empezar", href: "/registro?producto=comprobante-e", variant: "primary" },
-        badge: "Obligatorio",
+        detailedFeatures: [
+          {
+            title: "Emision de documentos electronicos",
+            description:
+              "Emite boletas y facturas de venta electronicas, notas de credito, comunicacion de bajas y otros documentos requeridos por tu operacion.",
+          },
+          {
+            title: "Guias de remision",
+            description:
+              "Emite guias de remision remitente y transportista, con declaracion automatica de las guias generadas hacia SUNAT.",
+          },
+          {
+            title: "Declaracion automatica SUNAT",
+            description:
+              "Declara boletas, facturas, resumenes de boletas, notas de credito y resumenes de bajas sin procesos manuales repetitivos.",
+          },
+          {
+            title: "Seguimiento de comprobantes",
+            description:
+              "Actualiza y consulta la situacion de comprobantes emitidos y enviados a SUNAT mediante sincronizacion con sus servidores.",
+          },
+          {
+            title: "Acceso para contabilidad",
+            description:
+              "Incluye una cuenta para el area contable, integrando el envio de documentos a SUNAT con la emision de comprobantes de tu aplicacion comercial.",
+          },
+          {
+            title: "Portal de consulta para clientes",
+            description:
+              "Tus clientes pueden consultar sus comprobantes de venta emitidos desde el portal web de Facturacion Electronica.",
+          },
+          {
+            title: "Alojamiento y soporte",
+            description:
+              "Aloja comprobantes electronicos durante 365 dias e incluye asesoria 24x7 ante incidencias de facturacion electronica.",
+          },
+          {
+            title: "Actualizacion normativa",
+            description:
+              "La plataforma se actualiza frente a cambios de normativa SUNAT y permite adecuar reportes para CONCAR, Contasys, NavaSoft y otros.",
+          },
+        ],
+        cta: {
+          label: "Solicitar demo",
+          href: "/contacto?producto=comprobante-e",
+          variant: "primary",
+        },
+        badge: "Servicio mensual",
         sortOrder: 1,
-        trialDays: 30,
       },
     ],
-    addons: [
-      {
-        id: "compe_volumen",
-        slug: "volumen-alto",
-        name: "Volumen Alto",
-        description: "Emisión ilimitada para empresas con más de 500 comprobantes al mes.",
-        category: "other",
-        price: { amountMonthly: 89, amountAnnual: 74, currency: "PEN", currencySymbol: "S/" },
-        compatiblePlanIds: ["compe_base"],
-        features: ["Comprobantes ilimitados", "SLA prioritario", "Soporte en contingencias SUNAT"],
-        isAvailable: true,
-        badge: "Más solicitado",
-      },
-      {
-        id: "compe_api_pro",
-        slug: "api-pro",
-        name: "API Pro",
-        description: "Webhooks, sandbox y SDKs para integraciones avanzadas.",
-        category: "integrations",
-        price: { amountMonthly: 59, amountAnnual: 49, currency: "PEN", currencySymbol: "S/" },
-        compatiblePlanIds: ["compe_base"],
-        features: ["Webhooks para CDR", "Sandbox de pruebas", "SDK PHP, Python y Node.js"],
-        isAvailable: true,
-      },
-      {
-        id: "compe_masivo",
-        slug: "emision-masiva",
-        name: "Emisión Masiva",
-        description: "Importa y emite miles de comprobantes desde Excel o CSV.",
-        category: "other",
-        price: { amountMonthly: 45, amountAnnual: 37, currency: "PEN", currencySymbol: "S/" },
-        compatiblePlanIds: ["compe_base"],
-        features: ["Carga por Excel / CSV", "Validación previa", "Notificación al finalizar"],
-        isAvailable: true,
-      },
-    ],
+    addons: [],
     faq: {
       title: "Preguntas frecuentes",
       items: [
-        { id: "f1", question: "¿Están autorizados por SUNAT?",
-          answer: "Sí. Operamos como PSE con autorización vigente de SUNAT.", sortOrder: 1 },
-        { id: "f2", question: "¿Qué pasa si supero los 500 comprobantes?",
-          answer: "Activa el módulo Volumen Alto para emisión ilimitada.", sortOrder: 2 },
-        { id: "f3", question: "¿Qué pasa durante una contingencia de SUNAT?",
-          answer: "Gestionamos los reintentos automáticamente. Tus comprobantes se envían al restablecerse el servicio.", sortOrder: 3 },
-        { id: "f4", question: "¿Puedo integrar con mi sistema actual?",
-          answer: "Sí. El plan base incluye API REST. Para webhooks y SDKs, activa el módulo API Pro.", sortOrder: 4 },
+        {
+          id: "documentos",
+          question: "Que documentos electronicos puedo emitir?",
+          answer:
+            "Puedes emitir boletas, facturas, notas de credito, comunicaciones de bajas y guias de remision remitente y transportista.",
+          sortOrder: 1,
+        },
+        {
+          id: "sunat",
+          question: "La declaracion a SUNAT es automatica?",
+          answer:
+            "Si. La plataforma declara automaticamente los documentos emitidos y permite consultar su situacion ante SUNAT.",
+          sortOrder: 2,
+        },
+        {
+          id: "portal",
+          question: "Mis clientes pueden consultar sus comprobantes?",
+          answer:
+            "Si. El servicio incluye portal web para consulta de comprobantes emitidos y alojamiento durante 365 dias.",
+          sortOrder: 3,
+        },
+        {
+          id: "soporte",
+          question: "Incluye soporte ante incidencias?",
+          answer:
+            "Si. Incluye asesoria 24x7 sobre incidencias de facturacion electronica y actualizaciones ante cambios normativos de SUNAT.",
+          sortOrder: 4,
+        },
       ],
     },
     finalCta: {
-  headline: "Empieza a facturar electrónicamente hoy",
-  subheadline: "Optimiza tu gestión y mantén el control total de tus comprobantes.",
-  backgroundVariant: "brand",
-  ctaPrimary: { 
-    label: "Solicitar demo", 
-    href: "#demo-form", 
-    variant: "primary" 
-  },
-  ctaSecondary: { 
-    label: "Ver documentación API", 
-    href: "/docs/comprobante-e", 
-    variant: "outline" 
-  },
-  trustSignals: ["PSE autorizado SUNAT", "99.98% uptime", "Soporte técnico 24/7"],
-},
+      headline: "Listo para emitir comprobantes electronicos?",
+      subheadline:
+        "Conecta tu facturacion con SUNAT, habilita el portal para tus clientes y manten tus comprobantes disponibles durante 365 dias.",
+      backgroundVariant: "brand",
+      ctaPrimary: {
+        label: "Solicitar demo",
+        href: "/contacto?producto=comprobante-e",
+        variant: "primary",
+      },
+      ctaSecondary: {
+        label: "Consultar portal",
+        href: "https://facturae-garzasoft.com/facturacion/vista/frmBuscarDocumento.php",
+        variant: "outline",
+        openInNewTab: true,
+      },
+      trustSignals: [
+        "Declaracion automatica SUNAT",
+        "Soporte 24x7",
+        "Alojamiento por 365 dias",
+      ],
+    },
   },
 };
 
