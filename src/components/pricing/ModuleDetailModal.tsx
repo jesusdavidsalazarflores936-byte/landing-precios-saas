@@ -56,7 +56,7 @@ export function ModuleDetailModal({
             <h3 className="text-sm font-semibold text-foreground">
               Características detalladas
             </h3>
-            <div className="mt-4 max-h-[50vh] space-y-5 overflow-y-auto pr-1">
+            <div className="mt-4 space-y-5">
               {detailedFeatures.map((feature) => (
                 <div key={feature.title} className="flex gap-4">
                   <span
@@ -93,7 +93,7 @@ export function ModuleDetailModal({
         ) : module.features && module.features.length > 0 ? (
           <div>
             <h3 className="text-sm font-semibold text-foreground">Beneficios</h3>
-            <ul className="mt-3 grid max-h-[50vh] gap-3 overflow-y-auto pr-1 sm:grid-cols-2">
+            <ul className="mt-3 grid gap-3 sm:grid-cols-2">
               {module.features.map((feature) => (
                 <li
                   key={feature}

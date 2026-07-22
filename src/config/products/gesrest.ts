@@ -283,6 +283,86 @@ const config: ProductFullConfig = {
         ],
         isAvailable: true,
       },
+      {
+        id: "gesrest_autoservicio",
+        slug: "autoservicio",
+        name: "Autoservicio",
+        tagline: "Elimina las colas: tus clientes piden y pagan de forma autónoma.",
+        description: "Transforma la experiencia de compra de tus clientes y elimina las largas colas en tu negocio. Este módulo permite que cada cliente realice su pedido y pago de forma completamente autónoma, ya sea desde terminales de autoservicio instaladas en tu local o desde su propio celular mediante un enlace web. Menos tiempo de espera, mayor capacidad de atención y una operación mucho más eficiente durante las horas de mayor demanda.",
+        category: "other",
+        price: { amountMonthly: 40, amountAnnual: 400, currency: "PEN", currencySymbol: "S/" },
+        compatiblePlanIds: ["gesrest_base"],
+        features: [
+          "Terminales y pedidos por celular",
+          "Sincronizado con tu carta",
+          "Pasarela de pago integrada",
+          "Validación de pedidos por código QR",
+        ],
+        detailedFeatures: [
+          {
+            title: "Canales autónomos",
+            description: "Ofrece a tus clientes dos formas de comprar sin necesidad de pasar por caja. Instala terminales de autoservicio en tu establecimiento para que los clientes realicen sus pedidos de manera independiente o comparte un enlace web para que puedan ordenar directamente desde su celular. Una sola plataforma para atender tanto dentro como fuera del local.",
+          },
+          {
+            title: "Fácil gestión",
+            description: "Decide qué productos y categorías estarán disponibles independientemente a tu operación habitual. Tu autoservicio se alimenta directamente de la carta de platos que ya usas en tu Atención en Local, por lo que cualquier actualización de stock o descripción se reflejará de forma automática. Sin embargo, puedes configurar precios diferenciados entre tu atención presencial y tu canal de autoservicio.",
+          },
+          {
+            title: "Interactividad",
+            description: "El cliente recorre un proceso de compra intuitivo y moderno. Desde el inicio puede visualizar banners promocionales, navegar por la carta, agregar productos a su carrito según el stock en tiempo real, seleccionar complementos, incluir notas personalizadas y solicitar comprobante electrónico antes de finalizar su pedido. Todo diseñado para reducir errores y agilizar la atención.",
+          },
+          {
+            title: "Pasarela de pago",
+            description: "El proceso de pago se realiza de forma rápida y segura mediante una pasarela de pagos integrada. Los clientes pueden pagar con tarjeta, Yape o Plin. Una experiencia completamente digital que acelera tu atención.",
+          },
+          {
+            title: "Validación y despacho de pedidos",
+            description: "El cliente recibe su código de pedido en formato QR a través de su correo electrónico y WhatsApp. Además, los pedidos desde terminal física se imprimen automáticamente en la impresora térmica conectada al equipo. Evita confusiones y reduce errores de entrega mediante la validación de código de pedido en la zona de entrega.",
+          },
+        ],
+        isAvailable: true,
+      },
+      {
+        id: "gesrest_tienda_virtual",
+        slug: "tienda-virtual",
+        name: "Tienda virtual",
+        tagline: "Tu negocio disponible 24/7 en el mundo digital.",
+        description: "Tu negocio merece estar disponible para cualquier cliente en cualquier lugar. Con nuestra tienda virtual desarrollada a medida, llevas tu marca al mundo digital con una experiencia de compra moderna, atractiva y completamente integrada con tu operación diaria. Sin complicaciones técnicas, sin doble gestión: todo conectado desde un solo sistema.",
+        category: "other",
+        price: {
+          amountMonthly: 0,
+          amountAnnual: 0,
+          currency: "PEN",
+          currencySymbol: "S/",
+          isContactSales: true,
+        },
+        compatiblePlanIds: ["gesrest_base"],
+        features: [
+          "Personalización",
+          "Fácil gestión",
+          "Interactividad",
+          "Pasarela de pago",
+        ],
+        detailedFeatures: [
+          {
+            title: "Personalización",
+            description: "Tu tienda, tu identidad. Diseñamos y desarrollamos una tienda virtual única, adaptada al estilo y las necesidades específicas de tu negocio, con dominio propio y una propuesta visual que refleja lo que tu marca representa.",
+          },
+          {
+            title: "Fácil gestión",
+            description: "Olvídate de mantener dos cartas de platos distintas. Tu tienda virtual se alimenta directamente del catálogo de productos que ya usas en tu Atención en local, por lo que cualquier actualización de stock o descripción se refleja de forma automática en tu tienda en línea. Sin embargo, puedes configurar precios diferenciados entre tu atención presencial y tu canal virtual.",
+          },
+          {
+            title: "Interactividad",
+            description: "Ofrece a tus clientes una experiencia de compra completa y sin fricciones. Podrán navegar por tu catálogo con toda la información que necesitan para decidir con confianza, y armar su carrito al elegir productos según el stock en tiempo real.",
+          },
+          {
+            title: "Pasarela de pago",
+            description: "Tus clientes pagan de forma segura y autónoma directamente desde la tienda. Una vez confirmado el pago, el pedido llega automáticamente a tu zona de Delivery/Mostrador, así como a tu cocina, para que puedas prepararlo de inmediato. Menos pasos, menos errores, más ventas.",
+          },
+        ],
+        isAvailable: true,
+      },
     ],
     faq: {
       title: "Preguntas frecuentes",
