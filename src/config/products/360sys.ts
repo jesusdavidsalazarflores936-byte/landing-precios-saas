@@ -60,6 +60,33 @@ const config: ProductFullConfig = {
       annualDiscountLabel: "ahorra con el anual",
     },
     requiredPlanId: "pos-facturacion",
+    installation: {
+      label: "Instalación y configuración",
+      price: 100,
+      annualNote: "Sin costo al elegir el pago anual",
+    },
+    commercialNotes: [
+      {
+        id: "updates",
+        title: "Actualización continua",
+        description: "Mejoras permanentes para la plataforma 360Sys.",
+      },
+      {
+        id: "support",
+        title: "Soporte 24/7",
+        description: "Continuidad para la operación de tu negocio.",
+      },
+      {
+        id: "consulting",
+        title: "Asesoría permanente",
+        description: "Orientación para tus decisiones tecnológicas.",
+      },
+      {
+        id: "qualified-team",
+        title: "Personal calificado",
+        description: "Especialistas preparados para atender tus consultas.",
+      },
+    ],
     plans: [
       {
         id: "pos-facturacion",

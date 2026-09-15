@@ -158,6 +158,18 @@ export interface FinalCtaSection {
   trustSignals?: string[];         // e.g. ["Sin tarjeta de crédito", "Cancela cuando quieras"]
 }
 
+export interface PricingInstallation {
+  label: string;
+  price: number;
+  annualNote: string;
+}
+
+export interface PricingCommercialNote {
+  id: string;
+  title: string;
+  description: string;
+}
+
 // ─── Full Pricing Page Config ─────────────────────────────────────────────────
 
 export interface PricingPageConfig {
@@ -165,6 +177,8 @@ export interface PricingPageConfig {
   plans: PricingPlan[];
   requiredPlanId: string;          // ID of the mandatory base plan
   addons?: Addon[];
+  installation?: PricingInstallation;
+  commercialNotes?: PricingCommercialNote[];
   comparisonTable?: ComparisonTableConfig;
   faq?: FaqSection;
   finalCta: FinalCtaSection;
