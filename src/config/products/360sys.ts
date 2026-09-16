@@ -98,8 +98,8 @@ const config: ProductFullConfig = {
         isRequired: true,
         requiredPlanNote: "Plan base obligatorio",
         price: {
-          amountMonthly: 120,
-          amountAnnual: 1200,
+          amountMonthly: 100,
+          amountAnnual: 1000,
           currency: "PEN",
           currencySymbol: "S/",
         },
