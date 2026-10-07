@@ -63,7 +63,6 @@ const config: ProductFullConfig = {
     installation: {
       label: "Instalación y configuración",
       price: 100,
-      annualNote: "Sin costo al elegir el pago anual",
     },
     commercialNotes: [
       {

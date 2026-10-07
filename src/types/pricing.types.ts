@@ -161,7 +161,6 @@ export interface FinalCtaSection {
 export interface PricingInstallation {
   label: string;
   price: number;
-  annualNote: string;
 }
 
 export interface PricingCommercialNote {

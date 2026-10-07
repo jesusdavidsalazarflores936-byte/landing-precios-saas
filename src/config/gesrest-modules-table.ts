@@ -31,7 +31,6 @@ export interface GesrestModulesTableConfig {
   installation: {
     label: string;
     price: number;
-    annualNote: string;
   };
   commercialNotes: Array<{
     title: string;
@@ -303,8 +302,7 @@ const gesrestModulesTable: GesrestModulesTableConfig = {
   ],
   installation: {
     label: "Instalación y configuración",
-    price: 100,
-    annualNote: "Sin costo al contratar el pago anual"
+    price: 100
   },
   commercialNotes: [
     {
